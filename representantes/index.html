@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar para o conteúdo</a>
+  <header class="topbar">
+    <div class="wrap top-inner">
+      <a class="brand" id="brand" href="#topo"></a>
+      <button class="menu-btn" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#prioridades">Prioridades</a>
+        <a href="#manifesto-sec">Manifesto</a>
+        <a href="#candidatos">Candidatos</a>
+        <a href="#eleicao">A eleição</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="topo">
+      <div class="wrap hero-grid">
+        <div id="hero-txt"></div>
+        <aside class="vote-card" id="vote-card"></aside>
+      </div>
+    </section>
+
+    <section class="block alt" id="prioridades">
+      <div class="wrap"><div class="sec-head" id="prio-head"></div><div class="prio-grid" id="prio-grid"></div></div>
+    </section>
+
+    <section class="block" id="manifesto-sec">
+      <div class="wrap manifesto" id="manifesto"></div>
+    </section>
+
+    <section class="block alt" id="candidatos">
+      <div class="wrap">
+        <div class="sec-head" id="cand-head"></div>
+        <div class="toolbar">
+          <input class="search" id="search" type="search" placeholder="Pesquisar por nome, categoria ou departamento…" aria-label="Pesquisar candidatos">
+          <div class="chips" id="chips"></div>
+        </div>
+        <div id="cands"></div>
+      </div>
+    </section>
+
+    <section class="block" id="eleicao">
+      <div class="wrap"><div class="sec-head" id="elei-head"></div><div class="info-grid" id="info-grid"></div><div class="docs" id="docs"></div></div>
+    </section>
+
+    <section class="block" id="contacto" style="padding-top:0">
+      <div class="wrap"><div class="contact" id="contact"></div></div>
+    </section>
+  </main>
+
+  <footer><div class="wrap" id="foot"></div></footer>
+  <dialog id="dlg" aria-label="Candidato"></dialog>
+
+  <noscript><p class="wrap">Esta página precisa de JavaScript para mostrar a lista.</p></noscript>
+  <script src="data.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
