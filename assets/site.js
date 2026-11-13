@@ -97,7 +97,7 @@
       html += `<h3 class="group-title">${esc(g.titulo)} <small>(${list.length})</small></h3><div class="cands">` +
         list.map((c) => `<button class="cand" data-i="${all.indexOf(c)}">
           <div class="ph">${photo(c)}<span class="ord">${c.ordem}</span></div>
-          <div class="meta"><b>${esc(c.nome)}</b><span>${esc([c.categoria, c.departamento || c.unidade].filter(Boolean).join(" · "))}</span></div>
+          <div class="meta"><b>${esc(c.nome)}</b><span>${esc([c.categoria, c.unidade || c.departamento].filter(Boolean).join(" · "))}</span></div>
         </button>`).join("") + `</div>`;
     });
     $("#cands").innerHTML = html || `<p class="empty">Nenhum candidato corresponde à pesquisa.</p>`;
@@ -112,7 +112,7 @@
       <div class="txt"><h3>${esc(c.nome)}</h3>
         <div class="sub">${esc([c.categoria, c.departamento, c.unidade].filter(Boolean).join(" · "))}<br>${esc(c.grupo)} · n.º ${c.ordem}</div>
         ${paras(c.bio || "Biografia a acrescentar.")}
-        ${c.link ? `<p><a href="${esc(c.link)}" target="_blank" rel="noopener">Página pessoal →</a></p>` : ""}
+        ${c.link ? `<p><a href="${esc(c.link)}" target="_blank" rel="noopener">Página no SIGARRA →</a></p>` : ""}
       </div></div><button class="close" aria-label="Fechar">×</button></div>`;
     dlg.showModal();
   });
