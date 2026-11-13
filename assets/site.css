@@ -106,7 +106,7 @@ section.alt { background: var(--soft); }
 .cand:hover { transform: translateY(-3px); }
 .cand .ph { aspect-ratio: 4 / 4.3; background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 22%, var(--soft)), var(--soft));
   display: grid; place-items: center; position: relative; }
-.cand .ph { overflow: hidden; }
+.cand .ph { overflow: hidden; flex: none; width: 100%; height: auto; }
 .cand .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
 .cand .ini { font-family: "Fraunces", Georgia, serif; font-size: 54px; font-weight: 700; color: var(--accent); }
 .cand .ord { position: absolute; top: 10px; left: 10px; background: var(--card); color: var(--ink); border-radius: 999px; font-size: 12px; font-weight: 800; padding: 3px 9px; }
