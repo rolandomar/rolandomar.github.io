@@ -64,7 +64,7 @@ window.SITE = {
             bio: "Professor Catedrático no Departamento de Física e Astronomia, de que é Subdiretor. É Pró-Diretor da FCUP para os Alumni, membro do Conselho Científico e subdiretor do Programa Doutoral em Física." },
           { nome: "Ana Rita Pires Gaio", categoria: "Professora Auxiliar", unidade: "DM", departamento: "Departamento de Matemática", foto: "", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=232080",
             bio: "Professora Auxiliar no Departamento de Matemática e investigadora integrada do CMUP. Foi vice-diretora do Departamento e diretora da Licenciatura em Matemática Aplicada. Trabalha em modelos de regressão, aprendizagem estatística e bioestatística, com larga experiência em consultoria em Epidemiologia e Saúde Pública." },
-          { nome: "Manuel Eduardo Carvalho Duarte Correia", categoria: "Professor Associado", unidade: "DCC", departamento: "Departamento de Ciência de Computadores", foto: "", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=238695",
+          { nome: "Manuel Eduardo Carvalho Duarte Correia", categoria: "Professor Associado", unidade: "DCC", departamento: "Departamento de Ciência de Computadores", foto: "fotos/238695.png", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=238695",
             bio: "Professor Associado com Agregação no Departamento de Ciência de Computadores e membro integrado do INESC TEC, onde é responsável pela área de segurança informática no grupo CRACS. Foi Pró-Reitor da U.Porto para as Infraestruturas Tecnológicas e Segurança dos Sistemas de Informação (2018–2021). É membro da Comissão Executiva do DCC." },
         ],
       },
