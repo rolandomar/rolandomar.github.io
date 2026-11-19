@@ -262,17 +262,17 @@ window.SITE = {
 
   eleicao: {
     titulo: "Como e quando votar",
-    intro: "[Informação sobre o ato eleitoral.]",
-    data: "2026-12-01T09:00:00",
-    dataTexto: "[1 de dezembro de 2026]",
+    intro: "A eleição para o Conselho de Representantes integra o ato eleitoral dos órgãos de governo da FCUP, a 25 de novembro de 2026. Consulte os documentos oficiais no SIGARRA.",
+    data: "2026-11-25T09:00:00",
+    dataTexto: "25 de novembro de 2026",
     factos: [
-      { k: "Data", v: "[1 dez 2026]", p: "[Horário]" },
+      { k: "Data", v: "25 de novembro de 2026", p: "[Horário]" },
       { k: "Local", v: "[Voto eletrónico / Sala]", p: "[Detalhes]" },
       { k: "Quem vota", v: "[Corpo eleitoral]", p: "[Detalhes]" },
       { k: "Mandatário", v: "Joaquim Carlos Gomes Esteves da Silva", p: "Professor Catedrático · DGAOT" },
     ],
     documentos: [
-      { titulo: "[Regulamento eleitoral]", url: "#" },
+      { titulo: "Eleições dos órgãos de governo da FCUP (SIGARRA)", url: "https://sigarra.up.pt/fcup/pt/conteudos_geral.ver?pct_pag_id=1011511&pct_parametros=pv_unidade=116&pct_grupo=67811#67811" },
     ],
   },
 
