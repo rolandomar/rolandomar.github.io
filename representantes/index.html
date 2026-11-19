@@ -3,25 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lista</title>
-  <meta name="description" content="">
+  <title>Lista B · Conselho de Representantes · FCUP 2026</title>
+  <meta name="description" content="Construir o futuro de Ciências: transparência, inovação e pessoas. Conheça os candidatos e o manifesto da Lista B. Eleição a 25 de novembro de 2026.">
+  <meta name="theme-color" content="#121930">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Lista B · Conselho de Representantes · FCUP 2026">
+  <meta property="og:description" content="Construir o futuro de Ciências: transparência, inovação e pessoas. Conheça os candidatos e o manifesto da Lista B. Eleição a 25 de novembro de 2026.">
+  <meta property="og:url" content="https://rolandomar.github.io/representantes/">
+  <meta property="og:image" content="https://rolandomar.github.io/representantes/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23c8553d'/><text x='32' y='46' font-family='Georgia,serif' font-size='40' font-weight='700' text-anchor='middle' fill='white'>B</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/site.css?v=6">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/site.css?v=7">
+  <style>:root { --accent: #c8553d; }</style>
 </head>
 <body>
   <a class="skip" href="#main">Saltar para o conteúdo</a>
   <header class="topbar">
     <div class="wrap top-inner">
-      <a class="brand" id="brand" href="#topo"></a>
-      <button class="menu-btn" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+      <a class="brand" id="brand" href="#topo" aria-label="Início"></a>
+      <button class="menu-btn" id="menu" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav class="nav" id="nav" aria-label="Principal">
         <a href="#prioridades">Prioridades</a>
         <a href="#manifesto-sec">Manifesto</a>
         <a href="#candidatos">Candidatos</a>
         <a href="#eleicao">A eleição</a>
         <a href="#contacto">Contacto</a>
+        <a class="cta" href="#eleicao">Como votar</a>
       </nav>
     </div>
   </header>
@@ -30,43 +43,44 @@
     <section class="hero" id="topo">
       <div class="wrap hero-grid">
         <div id="hero-txt"></div>
-        <aside class="vote-card" id="vote-card"></aside>
+        <aside class="vote-card" id="vote-card" aria-label="Dia da eleição"></aside>
       </div>
     </section>
+    <div class="wrap stats" id="stats"></div>
 
-    <section class="block alt" id="prioridades">
+    <section class="block" id="prioridades">
       <div class="wrap"><div class="sec-head" id="prio-head"></div><div class="prio-grid" id="prio-grid"></div></div>
     </section>
 
-    <section class="block" id="manifesto-sec">
+    <section class="block alt" id="manifesto-sec">
       <div class="wrap manifesto" id="manifesto"></div>
     </section>
 
-    <section class="block alt" id="candidatos">
+    <section class="block" id="candidatos">
       <div class="wrap">
         <div class="sec-head" id="cand-head"></div>
         <div class="toolbar">
           <input class="search" id="search" type="search" placeholder="Pesquisar por nome, categoria ou departamento…" aria-label="Pesquisar candidatos">
-          <div class="chips" id="chips"></div>
+          <div class="chips" id="chips" role="group" aria-label="Filtrar por departamento"></div>
         </div>
         <div id="cands"></div>
       </div>
     </section>
 
-    <section class="block" id="eleicao">
+    <section class="block alt" id="eleicao">
       <div class="wrap"><div class="sec-head" id="elei-head"></div><div class="info-grid" id="info-grid"></div><div class="docs" id="docs"></div></div>
     </section>
 
-    <section class="block" id="contacto" style="padding-top:0">
+    <section class="block" id="contacto">
       <div class="wrap"><div class="contact" id="contact"></div></div>
     </section>
   </main>
 
-  <footer><div class="wrap" id="foot"></div></footer>
-  <dialog id="dlg" aria-label="Candidato"></dialog>
+  <footer><div class="wrap foot" id="foot"></div></footer>
+  <dialog id="dlg" aria-label="Ficha do candidato"></dialog>
 
-  <noscript><p class="wrap">Esta página precisa de JavaScript para mostrar a lista.</p></noscript>
-  <script src="data.js?v=6"></script>
-  <script src="../assets/site.js?v=6"></script>
+  <noscript><p class="wrap" style="padding:24px 0">Esta página precisa de JavaScript para mostrar a lista.</p></noscript>
+  <script src="data.js?v=7"></script>
+  <script src="../assets/site.js?v=7"></script>
 </body>
 </html>

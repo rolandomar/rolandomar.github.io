@@ -10,6 +10,8 @@ Cada site é gerado a partir do respetivo `data.js`; não é preciso mexer no HT
 - Textos, prioridades, manifesto, candidatos, datas e contactos: `*/data.js`
 - Fotos: `*/fotos/` → referir como `"fotos/nome.jpg"`
 - Design partilhado: `assets/site.css` e `assets/site.js`
+- Imagem de pré-visualização ao partilhar a ligação: `*/og.png` (1200×630)
+- Depois de alterar `assets/` ou `data.js`, aumentar o número em `?v=` nos `index.html`, para os browsers irem buscar a versão nova
 
 ## Pré-visualizar localmente
 ```

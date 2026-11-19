@@ -238,7 +238,11 @@ window.SITE = {
     "titulo": "Como e quando votar",
     "intro": "O Conselho Científico tem 21 membros além do Diretor. Dez são eleitos pelos docentes e investigadores, em listas fechadas. O calendário e as regras foram fixados pelo Despacho n.º 33/2026 da Diretora da FCUP.",
     "data": "2026-11-25T10:00:00",
-    "dataTexto": "25 de novembro de 2026 · 10h–18h",
+    "fim": "2026-11-25T18:00:00",
+    "horario": "10h–18h",
+    "localCurto": "átrio FC4/FC5 · voto presencial",
+    "local": "Átrio dos edifícios FC4/FC5, Faculdade de Ciências da Universidade do Porto",
+    "dataTexto": "Quarta-feira, 25 de novembro de 2026",
     "factos": [
       {
         "k": "Data",
