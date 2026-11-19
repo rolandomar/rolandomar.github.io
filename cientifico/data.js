@@ -235,18 +235,43 @@ window.SITE = {
   },
 
   eleicao: {
-    titulo: "Como e quando votar",
-    intro: "A eleição para o Conselho Científico integra o ato eleitoral dos órgãos de governo da FCUP, a 25 de novembro de 2026. Consulte os documentos oficiais no SIGARRA.",
-    data: "2026-11-25T09:00:00",           // usado na contagem decrescente (ISO)
-    dataTexto: "25 de novembro de 2026",
-    factos: [
-      { k: "Data", v: "25 de novembro de 2026", p: "[Horário]" },
-      { k: "Local", v: "[Voto eletrónico / Sala]", p: "[Detalhes]" },
-      { k: "Quem vota", v: "[Corpo eleitoral]", p: "[Detalhes]" },
+    "titulo": "Como e quando votar",
+    "intro": "O Conselho Científico tem 21 membros além do Diretor. Dez são eleitos pelos docentes e investigadores, em listas fechadas. O calendário e as regras foram fixados pelo Despacho n.º 33/2026 da Diretora da FCUP.",
+    "data": "2026-11-25T10:00:00",
+    "dataTexto": "25 de novembro de 2026 · 10h–18h",
+    "factos": [
+      {
+        "k": "Data",
+        "v": "25 de novembro de 2026",
+        "p": "Urnas abertas das 10h00 às 18h00."
+      },
+      {
+        "k": "Local",
+        "v": "Átrio dos edifícios FC4/FC5",
+        "p": "Voto presencial, pessoal e secreto. Não há voto por procuração, por correspondência nem eletrónico."
+      },
+      {
+        "k": "Quem vota",
+        "v": "Docentes e investigadores",
+        "p": "Docentes e investigadores com vínculo à FCUP, em tempo integral e com contrato não inferior a um ano."
+      },
+      {
+        "k": "Como votar",
+        "v": "Assinale com X a Lista B",
+        "p": "Vota-se numa lista. Os 10 lugares são distribuídos pelo método de Hondt."
+      },
+      {
+        "k": "Resultados",
+        "v": "Até 24 horas após o fecho",
+        "p": "Divulgados pela comissão eleitoral."
+      }
     ],
-    documentos: [
-      { titulo: "Eleições dos órgãos de governo da FCUP (SIGARRA)", url: "https://sigarra.up.pt/fcup/pt/conteudos_geral.ver?pct_pag_id=1011511&pct_parametros=pv_unidade=116&pct_grupo=67811#67811" },
-    ],
+    "documentos": [
+      {
+        "titulo": "Despacho n.º 33/2026 e regulamento eleitoral (SIGARRA)",
+        "url": "https://sigarra.up.pt/fcup/pt/conteudos_geral.ver?pct_pag_id=1011511&pct_parametros=pv_unidade=116&pct_grupo=67811#67811"
+      }
+    ]
   },
 
   contacto: {
