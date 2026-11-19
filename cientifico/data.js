@@ -276,8 +276,8 @@ window.SITE = {
 
   contacto: {
     titulo: "Fale connosco",
-    texto: "[Dúvidas, sugestões ou contributos para o programa.]",
-    email: "",                             // ex.: "lista.a@exemplo.pt"
+    texto: "Dúvidas, sugestões ou contributos para o programa? Escreva ao mandatário da Lista B, Joaquim Esteves da Silva.",
+    email: "jcsilva@fc.up.pt",
     form: "",                              // ex.: link para Google Forms
   },
 };

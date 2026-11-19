@@ -302,8 +302,8 @@ window.SITE = {
 
   contacto: {
     titulo: "Fale connosco",
-    texto: "[Dúvidas, sugestões ou contributos para o programa.]",
-    email: "",
+    texto: "Dúvidas, sugestões ou contributos para o programa? Escreva ao mandatário da Lista B, Joaquim Esteves da Silva.",
+    email: "jcsilva@fc.up.pt",
     form: "",
   },
 };
