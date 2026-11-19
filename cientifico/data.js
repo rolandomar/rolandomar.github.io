@@ -184,7 +184,7 @@ window.SITE = {
       {
         titulo: "Efetivos",
         membros: [
-          { nome: "Joaquim Carlos Gomes Esteves da Silva", categoria: "Professor Catedrático", unidade: "DGAOT", departamento: "Departamento de Geociências, Ambiente e Ordenamento do Território", foto: "", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=202378",
+          { nome: "Joaquim Carlos Gomes Esteves da Silva", categoria: "Professor Catedrático", unidade: "DGAOT", departamento: "Departamento de Geociências, Ambiente e Ordenamento do Território", foto: "fotos/202378.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=202378",
             bio: "Professor Catedrático no DGAOT, de que é Diretor desde 2018. Dirige o Programa Doutoral em Ciências e Tecnologia do Ambiente e é membro do Conselho Científico da FCUP." },
           { nome: "Luís Manuel das Neves Belchior Faia dos Santos", categoria: "Professor Catedrático", unidade: "DQB", departamento: "Departamento de Química e Bioquímica", foto: "fotos/202781.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=202781",
             bio: "Professor Catedrático no Departamento de Química e Bioquímica da FCUP, onde desenvolve atividade de docência e investigação. É Diretor do CIQUP – Centro de Investigação em Química da Universidade do Porto e membro do Conselho Científico da FCUP." },
