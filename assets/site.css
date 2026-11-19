@@ -92,6 +92,17 @@ section.alt { background: var(--soft); }
 .manifesto .body ul { padding-left: 20px; }
 .manifesto .body li { margin-bottom: 8px; }
 
+.msec { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); margin: 0 0 14px; border-left: 5px solid var(--accent); }
+.msec summary { cursor: pointer; padding: 18px 22px; font-weight: 800; font-size: 18px; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+.msec summary::-webkit-details-marker { display: none; }
+.msec summary::after { content: "+"; color: var(--accent); font-size: 24px; line-height: 1; }
+.msec[open] summary::after { content: "–"; }
+.msec-body { padding: 0 22px 18px; }
+.msec-body p, .msec-body li { font-size: 16px !important; }
+.msec-body h4 { margin: 18px 0 8px; font-size: 16px; color: var(--accent); }
+.mitems { padding-left: 18px; margin: 8px 0 0; }
+.mitems li { margin-bottom: 10px; }
+
 /* Candidatos */
 .toolbar { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-bottom: 28px; }
 .search { flex: 1 1 260px; padding: 12px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: inherit; }

@@ -4,37 +4,203 @@
 //  Fotos: coloque em representantes/fotos/ e use "fotos/nome.jpg" (quadradas ~600px).
 // =====================================================================
 window.SITE = {
-  lista: "A",                              // letra da lista
-  nomeLista: "[Nome da Lista]",
+  lista: "B",                              // letra da lista
+  nomeLista: "Construir o Futuro de Ciências",
   orgao: "Conselho de Representantes",
   instituicao: "FCUP",
   ano: "2026",
   cor: "#c8553d",                          // cor de destaque (hex)
 
+// Texto do manifesto extraído do documento oficial da Lista B.
   hero: {
-    titulo: "[Uma Faculdade]",
-    destaque: "[que nos representa.]",
-    lead: "[Uma frase de apresentação da lista: quem somos e o que propomos para o Conselho de Representantes da Faculdade de Ciências da Universidade do Porto.]",
+    "titulo": "Construir o futuro de Ciências:",
+    "destaque": "transparência, inovação e pessoas.",
+    "lead": "Uma lista que alia a experiência à energia renovadora duma nova geração, focada em construir uma Faculdade mais moderna, participativa, transparente e competitiva."
   },
 
   prioridades: {
-    titulo: "[Três compromissos para o próximo mandato]",
-    intro: "[Breve introdução às prioridades.]",
-    itens: [
-      { titulo: "[Governação participada]", texto: "[Descrição curta da prioridade.]" },
-      { titulo: "[Transparência]", texto: "[Descrição curta da prioridade.]" },
-      { titulo: "[Comunidade]", texto: "[Descrição curta da prioridade.]" },
-    ],
+    "titulo": "Cinco eixos de supervisão e influência",
+    "intro": "Enquanto órgão colegial representativo e de fiscalização, propomo-nos intervir firmemente através de cinco eixos essenciais:",
+    "itens": [
+      {
+        "titulo": "Estratégia e Modernização",
+        "texto": "O CR deve ser o grande catalisador estratégico da Faculdade. Impulsionaremos debates e recomendações para que os órgãos de gestão promovam sinergias, infraestruturas modernas e metodologias de formação que coloquem a FCUP num patamar de elevada competitividade internacional."
+      },
+      {
+        "titulo": "Escrutínio e Compromisso Transparente",
+        "texto": "Exerceremos uma fiscalização rigorosa e permanente sobre todas as atividades de gestão. Manteremos uma interação crítica e construtiva com a Direção, validando as ações que promovam a qualidade da Faculdade, mas exigindo sempre que as decisões executivas sejam devidamente fundamentadas e auditáveis perante a comunidade."
+      },
+      {
+        "titulo": "Participação, Proximidade e Diálogo Aberto",
+        "texto": "Atuaremos como o elo de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários — de todas as carreiras — sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
+      },
+      {
+        "titulo": "Interação com a Região e Sociedade",
+        "texto": "Dinamizaremos o papel do CR na definição das grandes linhas de orientação externa da faculdade. Incentivaremos e apoiaremos a Direção na criação de parcerias estratégicas, na valorização do conhecimento e no estreitar de laços com o tecido regional e social."
+      },
+      {
+        "titulo": "Uma Faculdade a Pensar no Futuro",
+        "texto": "Este mandato inicia-se num momento de transição estatutária, o que confere ao CR uma responsabilidade acrescida. Seremos proativos na proposta e aprovação de condições organizacionais e administrativas que preparem o futuro, assegurando a pluralidade e a renovação democrática de Ciências no final deste quadriénio."
+      }
+    ]
   },
 
   manifesto: {
-    citacao: "[Uma frase forte que resuma o manifesto.]",
-    paragrafos: [
-      "[Primeiro parágrafo do manifesto.]",
-      "[Segundo parágrafo do manifesto.]",
+    "citacao": "O sucesso da agenda científica, o rigor do projeto educativo e a relevância da nossa ligação à sociedade exigem uma governação atenta e uma fiscalização ativa. Este é o compromisso que assumimos: influenciar o rumo de Ciências para unir a nossa comunidade em torno de uma faculdade melhor, mais justa e com ainda mais prestígio!",
+    "paragrafos": [
+      "A Faculdade de Ciências da Universidade do Porto (FCUP) é uma instituição de referência, comprometida com a investigação de mérito internacional, o ensino de excelência e a transferência de conhecimento com impacto real na sociedade. Esta candidatura ao Conselho de Representantes (CR) nasce da convicção profunda de que o futuro de Ciências depende da capacidade de influenciarmos e promovermos uma governação mais moderna, transparente e competitiva, assente num ambiente interno que estimule uma maior participação de todos nos processos de decisão.",
+      "Apresentamos uma lista que alia a experiência à energia renovadora duma nova geração, focada em construir uma Faculdade mais moderna, participativa, transparente e competitiva. Apostamos fortemente no reforço da voz da comunidade FCUP, cuja diversidade de perspetivas e ambição são o motor essencial para a modernização das nossas estruturas e para a criação de uma verdadeira e natural cultura de intervenção participativa na visão, ideias, objetivos, atividades e coesão na FCUP."
     ],
-    compromissos: ["[Compromisso 1]", "[Compromisso 2]", "[Compromisso 3]"],
-    pdf: "",
+    "seccoes": [
+      {
+        "titulo": "Princípios fundamentais: o nosso referencial de governação",
+        "texto": [
+          "A nossa ação no CR será guiada por princípios que colocam as pessoas e o orgulho de pertencer à FCUP no centro do debate estratégico, instando a Direção e os restantes conselhos a assegurarem:",
+          "Assumimos estes valores como o guião essencial da nossa ação no Conselho de Representantes e como o referencial decisivo para a eleição do Diretor."
+        ],
+        "itens": [
+          {
+            "t": "Participação Democrática e Proximidade",
+            "d": "Promover mecanismos eficazes que assegurem a auscultação regular da comunidade académica nas tomadas de decisão."
+          },
+          {
+            "t": "Pluralismo e Sentido de Escola",
+            "d": "Valorizar a diversidade da Faculdade e defender a descentralização de processos junto dos órgãos de gestão."
+          },
+          {
+            "t": "Independência e Equilíbrio Institucional",
+            "d": "Velar pelo respeito e pela autonomia funcional de cada órgão da FCUP, garantindo uma clara separação entre governação e execução."
+          },
+          {
+            "t": "Transparência e Confiança",
+            "d": "Exigir total clareza na partilha de informação e uma rigorosa prestação de contas por parte dos órgãos executivos."
+          },
+          {
+            "t": "Representatividade Efetiva",
+            "d": "Garantir que a voz e as preocupações de quem trabalha, estuda e constrói diariamente a FCUP têm lugar no debate estratégico."
+          },
+          {
+            "t": "Espaço de Debate e Reflexão",
+            "d": "Estimular o espírito crítico e a discussão livre sobre as grandes decisões de médio e longo prazo da instituição."
+          },
+          {
+            "t": "Valorização das Pessoas",
+            "d": "Recomendar e incentivar políticas que priorizem o bem-estar, a dignificação, a progressão e o reconhecimento de todos os recursos humanos."
+          },
+          {
+            "t": "Portas Abertas à Região",
+            "d": "Impulsionar a ligação da Faculdade ao exterior, incentivando a Direção a projetar a nossa ciência e o nosso talento na sociedade."
+          }
+        ],
+        "subsec": []
+      },
+      {
+        "titulo": "Eixos programáticos: pilares de supervisão e influência",
+        "texto": [
+          "Enquanto órgão colegial representativo e de fiscalização, propomo-nos intervir firmemente através de cinco eixos essenciais:"
+        ],
+        "itens": [],
+        "subsec": [
+          {
+            "titulo": "1. Estratégia e Modernização",
+            "texto": [
+              "O CR deve ser o grande catalisador estratégico da Faculdade. Impulsionaremos debates e recomendações para que os órgãos de gestão promovam sinergias, infraestruturas modernas e metodologias de formação que coloquem a FCUP num patamar de elevada competitividade internacional."
+            ],
+            "itens": []
+          },
+          {
+            "titulo": "2. Escrutínio e Compromisso Transparente",
+            "texto": [
+              "Exerceremos uma fiscalização rigorosa e permanente sobre todas as atividades de gestão. Manteremos uma interação crítica e construtiva com a Direção, validando as ações que promovam a qualidade da Faculdade, mas exigindo sempre que as decisões executivas sejam devidamente fundamentadas e auditáveis perante a comunidade."
+            ],
+            "itens": []
+          },
+          {
+            "titulo": "3. Participação, Proximidade e Diálogo Aberto",
+            "texto": [
+              "Atuaremos como o elo de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários — de todas as carreiras — sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
+            ],
+            "itens": []
+          },
+          {
+            "titulo": "4. Interação com a Região e Sociedade",
+            "texto": [
+              "Dinamizaremos o papel do CR na definição das grandes linhas de orientação externa da faculdade. Incentivaremos e apoiaremos a Direção na criação de parcerias estratégicas, na valorização do conhecimento e no estreitar de laços com o tecido regional e social."
+            ],
+            "itens": []
+          },
+          {
+            "titulo": "5. Uma Faculdade a Pensar no Futuro",
+            "texto": [
+              "Este mandato inicia-se num momento de transição estatutária, o que confere ao CR uma responsabilidade acrescida. Seremos proativos na proposta e aprovação de condições organizacionais e administrativas que preparem o futuro, assegurando a pluralidade e a renovação democrática de Ciências no final deste quadriénio."
+            ],
+            "itens": []
+          }
+        ]
+      },
+      {
+        "titulo": "Planeamento estratégico e valorização das pessoas",
+        "texto": [
+          "Não sendo um órgão de gestão direta, o CR tem o poder e o dever de definir as diretrizes estratégicas da instituição. Nesse sentido, assumimos o compromisso de exigir, propor e incentivar a Direção e os Conselhos Científico e Pedagógico a adotarem as seguintes medidas:"
+        ],
+        "itens": [],
+        "subsec": [
+          {
+            "titulo": "Plano de Evolução de Recursos Docentes",
+            "itens": [
+              {
+                "t": "Gestão Preditiva",
+                "d": "Propor a criação de um plano plurianual de evolução do corpo docente com base no mapa rigoroso de aposentações para a próxima década."
+              },
+              {
+                "t": "Distribuição Justa",
+                "d": "Recomendar a correção de assimetrias históricas, para que a abertura de vagas executada pela Direção responda de forma equilibrada às reais necessidades pedagógicas de cada departamento."
+              },
+              {
+                "t": "Renovação Geracional",
+                "d": "Incentivar a antecipação das saídas de docentes seniores para garantir transições de regência suaves e sem hiatos na qualidade do ensino."
+              }
+            ]
+          },
+          {
+            "titulo": "Sustentabilidade Financeira e Combate à Precariedade dos Investigadores",
+            "itens": [
+              {
+                "t": "Atração de Financiamento",
+                "d": "Recomendar o reforço do apoio institucional à submissão de candidaturas a fundos internacionais competitivos."
+              },
+              {
+                "t": "Mecanismos de Transição",
+                "d": "Propor à Direção o desenho de fundos de transição interna para assegurar a continuidade salarial de investigadores de excelência entre projetos."
+              },
+              {
+                "t": "Estabilização de Carreiras",
+                "d": "Defender junto dos órgãos de gestão a contratualização duradoura através de uma gestão estratégica das dotações orçamentais da faculdade e da universidade."
+              }
+            ]
+          },
+          {
+            "titulo": "Apoio ao Ecossistema Científico",
+            "itens": [
+              {
+                "t": "Centros de Investigação",
+                "d": "Promover uma reflexão estruturada entre os órgãos de gestão e as unidades de ID&I sediadas na FCUP para maximizar sinergias."
+              },
+              {
+                "t": "Promoção da Ciência",
+                "d": "Estimular a criação de mecanismos internos que deem maior visibilidade internacional à ciência produzida na faculdade."
+              },
+              {
+                "t": "Desburocratização",
+                "d": "Pressionar os órgãos executivos para a simplificação administrativa, para o reforço partilhado de laboratórios e para o apoio às carreiras dos jovens investigadores."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fecho": [],
+    "pdf": ""
   },
 
   candidatos: {

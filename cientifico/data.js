@@ -4,37 +4,175 @@
 //  Fotos: coloque em cientifico/fotos/ e use "fotos/nome.jpg" (quadradas ~600px).
 // =====================================================================
 window.SITE = {
-  lista: "A",                              // letra da lista
-  nomeLista: "[Nome da Lista]",
+  lista: "B",                              // letra da lista
+  nomeLista: "Pessoas · Independência · Qualidade",
   orgao: "Conselho Científico",
   instituicao: "FCUP",
   ano: "2026",
   cor: "#1f6f8b",                          // cor de destaque (hex)
 
+// Texto do manifesto extraído do documento oficial da Lista B.
   hero: {
-    titulo: "[Ciência com]",
-    destaque: "[ambição e rigor.]",
-    lead: "[Uma frase de apresentação da lista: quem somos e o que propomos para o Conselho Científico da Faculdade de Ciências da Universidade do Porto.]",
+    "titulo": "Um Conselho Científico",
+    "destaque": "independente e participativo.",
+    "lead": "Compromisso de colocar as Pessoas e a qualidade no centro de todas as decisões. Mais interveniente na Sociedade e Região."
   },
 
   prioridades: {
-    titulo: "[Três compromissos para o próximo mandato]",
-    intro: "[Breve introdução às prioridades.]",
-    itens: [
-      { titulo: "[Investigação]", texto: "[Descrição curta da prioridade.]" },
-      { titulo: "[Carreiras]", texto: "[Descrição curta da prioridade.]" },
-      { titulo: "[Ensino e formação avançada]", texto: "[Descrição curta da prioridade.]" },
-    ],
+    "titulo": "Quatro pilares para o Conselho Científico",
+    "intro": "Os pilares fundamentais que vão guiar a nossa ação no próximo mandato.",
+    "itens": [
+      {
+        "titulo": "Transparência, independência e debate",
+        "texto": "Fóruns regulares de discussão, voz ativa dos mais novos e um Conselho autónomo dos restantes órgãos de gestão, defendendo que quem o dirige seja eleito pelo próprio órgão."
+      },
+      {
+        "titulo": "Planeamento e valorização das pessoas",
+        "texto": "Plano plurianual de recursos docentes, renovação geracional, combate à precariedade e fundos de transição para investigadores."
+      },
+      {
+        "titulo": "Qualidade académica e inovação",
+        "texto": "Rigor pedagógico e científico acima de lógicas administrativas, e reflexão sobre o impacto da IA no ensino e na investigação."
+      },
+      {
+        "titulo": "Região e sociedade",
+        "texto": "Uma escola de portas abertas, cooperação com o ecossistema regional e aposta na divulgação científica e na ciência cidadã."
+      }
+    ]
   },
 
   manifesto: {
-    citacao: "[Uma frase forte que resuma o manifesto.]",
-    paragrafos: [
-      "[Primeiro parágrafo do manifesto.]",
-      "[Segundo parágrafo do manifesto.]",
+    "citacao": "Pelas Pessoas, Independência entre Órgãos, pela Qualidade, pela FCUP.",
+    "paragrafos": [
+      "Estimados Colegas, Docentes, Investigadores e Membros da Comunidade Académica,",
+      "Apresentamos esta candidatura ao Conselho Científico da Faculdade de Ciências da Universidade do Porto (FCUP) com um sentido de responsabilidade e com uma visão para o futuro da nossa instituição. A FCUP é uma referência de qualidade na I&D e no ensino na Universidade do Porto e em Portugal. Para que continue na vanguarda da investigação nacional e internacional, assumimos um compromisso: colocar as pessoas e a qualidade no centro de todas as decisões. Uma instituição científica só é verdadeiramente forte quando valoriza o seu capital humano em prol da excelência académica e que é também interveniente e valorizada pela sociedade.",
+      "Assumimos o compromisso de transformar o Conselho Científico num órgão de debate e intervenção ativa, pautado por uma independência face aos restantes órgãos de gestão e por uma cultura de proximidade e respeito por quem constrói a faculdade todos os dias."
     ],
-    compromissos: ["[Compromisso 1]", "[Compromisso 2]", "[Compromisso 3]"],
-    pdf: "",                               // ex.: "manifesto.pdf" (deixe vazio para esconder)
+    "seccoes": [
+      {
+        "titulo": "Transparência, independência e debate coletivo",
+        "itens": [
+          {
+            "t": "Espaço para o debate",
+            "d": "Promover fóruns regulares de discussão aberta sobre as grandes questões e temas estruturais que afetam a vida académica e científica da faculdade."
+          },
+          {
+            "t": "Integração e voz dos mais novos",
+            "d": "Criar canais efetivos que garantam a participação ativa das gerações mais jovens de docentes e investigadores nos processos de decisão, quebrando barreiras hierárquicas e estimulando o seu contributo na discussão do futuro pedagógico e científico da FCUP."
+          },
+          {
+            "t": "Aceleração de auscultação geracional",
+            "d": "Instituir momentos de audição regular e partilha com os investigadores em início de carreira e novos docentes, valorizando a sua perspetiva única sobre a modernização e as dinâmicas de integração na vida académica."
+          },
+          {
+            "t": "Independência nos órgãos de gestão",
+            "d": "Garantir a total autonomia do Conselho Científico na tomada de decisões, assegurando que a visão científica e técnica da comunidade prevalece de forma livre, justa e isenta. Defendemos que o diretor do Conselho Científico deve ser eleito pelo órgão e nesse sentido, lutaremos por promover as propostas de alteração estatutárias."
+          },
+          {
+            "t": "Órgão interventivo e participativo",
+            "d": "Atuar proactivamente na definição das decisões estratégicas e da visão da FCUP e da própria Universidade do Porto, dando força institucional às aspirações de quem nela trabalha."
+          }
+        ],
+        "subsec": []
+      },
+      {
+        "titulo": "Planeamento estratégico e valorização das pessoas",
+        "itens": [],
+        "subsec": [
+          {
+            "titulo": "Plano de Evolução de Recursos Docentes",
+            "itens": [
+              {
+                "t": "Gestão preditiva e planeada",
+                "d": "Desenhar um plano plurianual de evolução dos recursos docentes assente num mapa rigoroso de previsão de aposentações para a próxima década e outras necessidades de recursos docentes decorrentes da implementação estratégica de novos ciclos de estudos."
+              },
+              {
+                "t": "Distribuição equilibrada e justa",
+                "d": "Utilizar esta ferramenta preditiva para corrigir assimetrias históricas, garantindo que a abertura de vagas e a alocação de recursos docentes e de investigação respondem de forma equilibrada às reais necessidades pedagógicas e científicas de cada departamento."
+              },
+              {
+                "t": "Renovação geracional planeada",
+                "d": "Antecipar a saída de docentes seniores para garantir transições de regência suaves e a transferência de conhecimento técnico sem hiatos na qualidade do ensino."
+              }
+            ]
+          },
+          {
+            "titulo": "Estratégia para a sustentabilidade financeira dos investigadores",
+            "itens": [
+              {
+                "t": "Gabinete de Atração de Financiamento",
+                "d": "Reforçar o apoio à submissão de candidaturas a fundos internacionais competitivos."
+              },
+              {
+                "t": "Mecanismos de financiamento",
+                "d": "Propor a criação de fundos de transição interna para assegurar a continuidade salarial e de contratos de investigadores de excelência entre o término de um projeto e o início do próximo."
+              },
+              {
+                "t": "Combate à precariedade",
+                "d": "Defender a contratualização duradoura e a estabilização de carreiras de investigação através de uma gestão estratégica das dotações orçamentais da faculdade e da universidade."
+              },
+              {
+                "t": "Papel dos Centros de Investigação",
+                "d": "Promover uma reflexão profunda e estruturada sobre o impacto e o posicionamento das unidades de ID&I sediadas na FCUP em articulação com os centros externos, maximizando sinergias institucionais e valorizando o mérito dos investigadores envolvidos."
+              },
+              {
+                "t": "Promoção da investigação da FCUP",
+                "d": "Desenvolver mecanismos eficazes que valorizem e deem visibilidade interna e internacional à ciência de excelência produzida na nossa faculdade."
+              },
+              {
+                "t": "Apoio ao ecossistema científico",
+                "d": "Manter o foco na desburocratização de processos administrativos, no reforço partilhado de infraestruturas laboratoriais e no apoio à estabilização da carreira dos jovens investigadores."
+              },
+              {
+                "t": "Estímulo à criação de Spinoffs",
+                "d": "Promover a criação de spinoffs fundadas por professores e investigadores, reduzindo entraves burocráticos e simplificando os processos internos de propriedade intelectual e transferência de tecnologia."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "titulo": "Qualidade académica e inovação pedagógica",
+        "itens": [
+          {
+            "t": "Cultura focada na qualidade",
+            "d": "Assegurar que os processos de avaliação, acreditação e reestruturação de cursos priorizam sempre o rigor pedagógico e científico, rejeitando lógicas puramente administrativas."
+          },
+          {
+            "t": "Reflexão sobre a IA nos cursos",
+            "d": "Avaliar e antecipar o efeito disruptivo da Inteligência Artificial nos currículos de licenciatura e mestrado, adaptando metodologias de ensino e avaliação de forma ética, inovadora e mantendo o padrão de exigência da FCUP."
+          },
+          {
+            "t": "IA na investigação",
+            "d": "Promover o debate sobre o uso de ferramentas de IA no suporte à atividade científica, acautelando a integridade académica e potenciando novas fronteiras de descoberta interdisciplinar."
+          }
+        ],
+        "subsec": []
+      },
+      {
+        "titulo": "Interação com a região e a sociedade",
+        "itens": [
+          {
+            "t": "Abertura à sociedade",
+            "d": "Promover a criação de uma escola de portas abertas com a realização de dias/semanas abertos dirigidos à sociedade (pessoas, empresas, instituições), promovendo a divulgação e parceria de competências científicas, tecnológicas e culturais na sociedade e região."
+          },
+          {
+            "t": "Interação com o ecossistema regional",
+            "d": "Intensificar o diálogo, a cooperação e o codesenvolvimento de projetos de inovação com o tecido socioeconómico, incubadoras de base tecnológica e as instituições da região do Porto."
+          },
+          {
+            "t": "Divulgação científica e ciência cidadã",
+            "d": "Apostar de forma pioneira em projetos que integrem os cidadãos no processo científico e na difusão do conhecimento, reforçando o impacto e o valor social da ciência no debate público."
+          }
+        ],
+        "subsec": []
+      }
+    ],
+    "fecho": [
+      "Acreditamos numa faculdade que valoriza o passado, mas que não tem medo de debater, planear e inovar para o futuro. Queremos um Conselho Científico que seja um facilitador da ciência, um parceiro estratégico de cada investigador e docente, um espaço de pensamento próprio, aberto à irreverência e perspetiva dos mais novos, e um garante absoluto da valorização das pessoas e da qualidade académica da FCUP.",
+      "Contamos com o vosso apoio, as vossas ideias e o vosso voto para construirmos juntos uma faculdade mais independente, equilibrada, humana e global."
+    ],
+    "pdf": ""
   },
 
   candidatos: {

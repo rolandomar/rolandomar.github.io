@@ -57,9 +57,16 @@
 
   // Manifesto
   const m = S.manifesto || {};
+  const itens = (l) => (l || []).length ? `<ul class="mitems">${l.map((x) => `<li><b>${esc(x.t)}.</b> ${esc(x.d)}</li>`).join("")}</ul>` : "";
+  const secHtml = (s, i) => `<details class="msec"${i === 0 ? " open" : ""}><summary>${esc(s.titulo)}</summary><div class="msec-body">
+      ${paras(s.texto)}${itens(s.itens)}
+      ${(s.subsec || []).map((u) => `<h4>${esc(u.titulo)}</h4>${paras(u.texto)}${itens(u.itens)}`).join("")}
+    </div></details>`;
   $("#manifesto").innerHTML = `
     <div><p class="eyebrow">Manifesto · Lista ${esc(S.lista)}</p><blockquote>${esc(m.citacao)}</blockquote></div>
     <div class="body">${paras(m.paragrafos)}
+      ${(m.seccoes || []).map(secHtml).join("")}
+      ${paras(m.fecho)}
       ${(m.compromissos || []).length ? `<h3>Comprometemo-nos a</h3><ul>${m.compromissos.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}
       ${m.pdf ? `<p><a class="btn ghost" href="${esc(m.pdf)}" target="_blank" rel="noopener">Descarregar manifesto (PDF)</a></p>` : ""}
     </div>`;
