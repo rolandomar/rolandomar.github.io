@@ -130,6 +130,10 @@ section.alt { background: var(--soft); }
 .sec-head p { color: var(--muted); font-size: 18px; margin: 0; }
 
 .prio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+/* 5 pilares: 3 em cima + 2 em baixo, a toda a largura (sem cartão solto) */
+.prio-grid.n5, .prio-grid.n6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.prio-grid.n5 .prio, .prio-grid.n6 .prio { grid-column: span 2; }
+.prio-grid.n5 .prio:nth-child(n+4) { grid-column: span 3; }
 .prio { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 26px 26px;
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
 .prio:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--accent); }
@@ -269,7 +273,13 @@ footer { padding: 36px 0 52px; color: var(--muted); font-size: 14px; }
   .nav a.cta { margin: 8px 0 0; text-align: center; }
   .menu-btn { display: block; }
 }
+@media (max-width: 940px) {
+  .prio-grid.n5, .prio-grid.n6 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .prio-grid.n5 .prio, .prio-grid.n6 .prio, .prio-grid.n5 .prio:nth-child(n+4) { grid-column: auto; }
+  .prio-grid.n5 .prio:last-child { grid-column: 1 / -1; }
+}
 @media (max-width: 700px) {
+  .prio-grid.n5, .prio-grid.n6 { grid-template-columns: minmax(0, 1fr); }
   .wrap { width: calc(100% - 32px); }
   .hero { padding: 48px 0 108px; }
   section.block { padding: 64px 0; }

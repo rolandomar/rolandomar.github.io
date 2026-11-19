@@ -94,6 +94,7 @@
 
   // ---------- Prioridades ----------
   $("#prio-head").innerHTML = `<p class="eyebrow">As nossas prioridades</p><h2>${esc(S.prioridades?.titulo)}</h2><p>${esc(S.prioridades?.intro)}</p>`;
+  $("#prio-grid").classList.add("n" + (S.prioridades?.itens || []).length);
   $("#prio-grid").innerHTML = (S.prioridades?.itens || []).map((p, i) => `
     <article class="prio"><div class="n">${i + 1}</div><h3>${esc(p.titulo)}</h3><p>${esc(p.texto)}</p></article>`).join("");
 
