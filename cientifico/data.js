@@ -177,7 +177,7 @@ window.SITE = {
 
   candidatos: {
     titulo: "Os nossos candidatos",
-    intro: "Nomes pela ordem do boletim de voto. Delegado da lista: António José Guerner Dias (Professor Auxiliar, DGAOT). Clique num candidato para ver a biografia. Informação recolhida do SIGARRA da FCUP.",
+    intro: "Nomes pela ordem do boletim de voto. Delegado da lista: António Guerner Dias (Professor Auxiliar, DGAOT). Clique num candidato para ver a biografia. Informação recolhida do SIGARRA da FCUP.",
     // Campos: nome, categoria, unidade (sigla do departamento, usada no filtro),
     // departamento (nome completo), foto, bio (texto ou lista de parágrafos), link.
     grupos: [
@@ -280,8 +280,8 @@ window.SITE = {
 
   contacto: {
     titulo: "Fale connosco",
-    texto: "Dúvidas, sugestões ou contributos para o programa? Fale com o delegado da Lista B, António José Guerner Dias.",
-    email: "",                             // email do delegado: por confirmar
+    texto: "Dúvidas, sugestões ou contributos para o programa? Escreva ao delegado da Lista B, António Guerner Dias.",
+    email: "agdias@fc.up.pt",
     form: "",                              // ex.: link para Google Forms
   },
 };
