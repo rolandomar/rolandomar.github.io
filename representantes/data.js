@@ -9,6 +9,8 @@ window.SITE = {
   orgao: "Conselho de Representantes",
   instituicao: "FCUP",
   ano: "2026",
+  dominio: "cr.listab.pt",                  // subdomínio próprio deste site
+  dominioOutro: "cc.listab.pt",             // subdomínio do site do outro conselho
   cor: "#c8553d",                          // cor de destaque (hex)
 
 // Texto do manifesto extraído do documento oficial da Lista B.

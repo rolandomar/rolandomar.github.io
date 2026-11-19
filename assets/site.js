@@ -195,9 +195,11 @@
       else { await navigator.clipboard.writeText(url); btn.textContent = "Ligação copiada ✓"; }
     } catch (_) { /* partilha cancelada */ }
   });
-  const outro = /representantes/i.test(S.orgao)
-    ? ["../cientifico/", "Lista B ao Conselho Científico"]
-    : ["../representantes/", "Lista B ao Conselho de Representantes"];
+  const isCR = /representantes/i.test(S.orgao);
+  // No domínio próprio (ex.: cc.listab.pt) liga ao subdomínio do outro conselho; no github.io usa o caminho relativo.
+  const noDominio = S.dominio && location.hostname === S.dominio && S.dominioOutro;
+  const outro = [noDominio ? `https://${S.dominioOutro}/` : (isCR ? "../cientifico/" : "../representantes/"),
+    isCR ? "Lista B ao Conselho Científico" : "Lista B ao Conselho de Representantes"];
   const doc0 = (e.documentos || [])[0];
   $("#foot").innerHTML = `<div class="foot-brand"><span class="badge">${esc(S.lista)}</span>
       <span><b>Lista ${esc(S.lista)} · ${esc(S.orgao)}</b>${esc(S.nomeLista)} · ${esc(S.instituicao)} ${esc(S.ano)}</span></div>

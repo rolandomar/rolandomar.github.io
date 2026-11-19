@@ -9,6 +9,8 @@ window.SITE = {
   orgao: "Conselho Científico",
   instituicao: "FCUP",
   ano: "2026",
+  dominio: "cc.listab.pt",                  // subdomínio próprio deste site
+  dominioOutro: "cr.listab.pt",             // subdomínio do site do outro conselho
   cor: "#1f6f8b",                          // cor de destaque (hex)
 
 // Texto do manifesto extraído do documento oficial da Lista B.
