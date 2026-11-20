@@ -239,7 +239,7 @@ window.SITE = {
       {
         titulo: "Suplentes",
         membros: [
-          { nome: "José Luís Campos de Oliveira Santos", categoria: "Professor Catedrático", unidade: "DFA", departamento: "Departamento de Física e Astronomia", foto: "fotos/202659.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=202659",
+          { nome: "José Luís Campos de Oliveira Santos", categoria: "Professor Catedrático", unidade: "DFA", departamento: "Departamento de Física e Astronomia", foto: "fotos/202659-v2.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=202659",
             bio: "Professor Catedrático no Departamento de Física e Astronomia. Dirige o Observatório Astronómico Prof. Manuel de Barros, é codiretor do Programa Doutoral em Engenharia Física e membro da Comissão Científica Restrita do Departamento." },
           { nome: "Helena Isabel da Costa Ribeiro", categoria: "Professora Auxiliar", unidade: "DGAOT", departamento: "Departamento de Geociências, Ambiente e Ordenamento do Território", foto: "fotos/249438.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=249438",
             bio: "Professora Auxiliar no DGAOT. Dirige a Licenciatura em Ciências e Tecnologia do Ambiente e preside às respetivas Comissões Científica e de Acompanhamento." },

@@ -213,7 +213,7 @@ window.SITE = {
       {
         titulo: "Suplentes",
         membros: [
-          { nome: "José Luís Campos de Oliveira Santos", categoria: "Professor Catedrático", unidade: "DFA", departamento: "Departamento de Física e Astronomia", foto: "fotos/202659.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=202659",
+          { nome: "José Luís Campos de Oliveira Santos", categoria: "Professor Catedrático", unidade: "DFA", departamento: "Departamento de Física e Astronomia", foto: "fotos/202659-v2.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=202659",
             bio: "Professor Catedrático no Departamento de Física e Astronomia. Dirige o Observatório Astronómico Prof. Manuel de Barros, é codiretor do Programa Doutoral em Engenharia Física e membro da Comissão Científica Restrita do Departamento." },
           { nome: "Luís Miguel Soares Ribeiro Leite da Cunha", categoria: "Professor Associado", unidade: "DGAOT", departamento: "Departamento de Geociências, Ambiente e Ordenamento do Território", foto: "fotos/405494.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=405494",
             bio: "Professor Associado no DGAOT e investigador integrado do GreenUPorto – Centro de Investigação em Produção Agroalimentar Sustentável, onde coordena o grupo de Perceção do Consumidor e Análise Sensorial. Dirige o Mestrado em Ciências do Consumo e Nutrição e é membro da Comissão de Ética e da Comissão Executiva do Departamento." },
