@@ -51,9 +51,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .top-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
 /* Logótipo: caixa do boletim com a cruz + «Lista B» */
-.mark { flex: none; width: 44px; height: 44px; }
-.mark rect { fill: #fff; stroke: var(--night); stroke-width: 3.6; }
-.mark path { fill: none; stroke: var(--accent); stroke-width: 5.4; stroke-linecap: round; }
+.mark { flex: none; width: 47px; height: 46px; overflow: visible; }
+.mark rect { fill: #fff; stroke: var(--night); stroke-width: 3.4; }
+.mark path { fill: var(--accent); }
 .logo-txt { display: flex; flex-direction: column; min-width: 0; }
 .logo-txt b { font-family: var(--serif); font-weight: 700; font-size: 27px; line-height: 1; letter-spacing: -.01em; color: var(--ink); white-space: nowrap; }
 .logo-txt b i, .ballot .who b i { font-style: normal; color: var(--accent); }
@@ -110,7 +110,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: 0 30px 70px rgba(0,0,0,.3); }
 .vote-card .lbl { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 800; color: rgba(255,255,255,.7); margin: 4px 4px 12px; }
 .ballot { display: flex; align-items: center; gap: 16px; background: #fff; color: #121930; border-radius: 16px; padding: 16px 18px; }
-.ballot .mark { width: 58px; height: 58px; }
+.ballot .mark { width: 63px; height: 62px; }
 .ballot .mark rect { stroke: #121930; }
 .ballot .who { min-width: 0; }
 .ballot .who b { display: block; font-family: var(--serif); font-size: 34px; line-height: 1.05; }
@@ -268,7 +268,7 @@ footer { padding: 36px 0 52px; color: var(--muted); font-size: 14px; }
 .pick p { margin: 0 0 18px; color: #5b6579; }
 .pick .more { font-weight: 700; color: var(--c); }
 .home-logo { display: flex; align-items: center; gap: 16px; margin-bottom: 30px; }
-.home-logo .mark { width: 60px; height: 60px; }
+.home-logo .mark { width: 65px; height: 64px; }
 .home-logo .logo-txt b { font-size: 38px; }
 .home-logo .logo-txt span { font-size: 15px; margin-top: 4px; }
 .home-foot { margin-top: 34px; color: rgba(255,255,255,.72); font-size: 15px; }
@@ -311,7 +311,7 @@ footer { padding: 36px 0 52px; color: var(--muted); font-size: 14px; }
   dialog { max-height: 92vh; overflow: auto; }
   .contact { padding: 34px 24px; border-radius: 22px; }
   .logo-txt em { display: none; }
-  .brand .mark { width: 40px; height: 40px; }
+  .brand .mark { width: 43px; height: 42px; }
   .brand .logo-txt b { font-size: 24px; }
   .pill { border-radius: 14px; }
   .ballot .who b { font-size: 30px; }
