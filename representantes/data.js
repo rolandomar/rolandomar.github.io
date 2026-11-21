@@ -34,7 +34,7 @@ window.SITE = {
       },
       {
         "titulo": "Participação, Proximidade e Diálogo Aberto",
-        "texto": "Atuaremos como o elo de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários — de todas as carreiras — sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
+        "texto": "Atuaremos como o elemento de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários — de todas as carreiras — sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
       },
       {
         "titulo": "Interação com a Região e Sociedade",
@@ -120,7 +120,7 @@ window.SITE = {
           {
             "titulo": "3. Participação, Proximidade e Diálogo Aberto",
             "texto": [
-              "Atuaremos como o elo de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários — de todas as carreiras — sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
+              "Atuaremos como o elemento de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários — de todas as carreiras — sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
             ],
             "itens": []
           },
