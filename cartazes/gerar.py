@@ -86,38 +86,9 @@ def _texto(im, xy, s, ft, cor):
     m = Image.new("L", im.size, 0); ImageDraw.Draw(m).text(xy, s, font=ft, fill=255, anchor="ls")
     cam = Image.new("RGBA", im.size, (*cor, 0)); cam.putalpha(m); im.alpha_composite(cam)
 
-def tracos_mao(n=18, cap=7):
-    """Os dois traços da cruz «à mão», como polígonos em unidades do lado da caixa (origem no canto superior esquerdo)."""
-    import math
-    def traco(p0, p1, w0, w1, curva):
-        (x0, y0), (x1, y1) = p0, p1; L = math.hypot(x1 - x0, y1 - y0)
-        nx, ny = -(y1 - y0) / L, (x1 - x0) / L; cx, cy = (x0 + x1) / 2 + nx * curva * L, (y0 + y1) / 2 + ny * curva * L
-        esq, dir_, pts = [], [], []
-        for i in range(n + 1):
-            t = i / n; x = (1 - t) ** 2 * x0 + 2 * t * (1 - t) * cx + t * t * x1; y = (1 - t) ** 2 * y0 + 2 * t * (1 - t) * cy + t * t * y1
-            tx, ty = 2 * (1 - t) * (cx - x0) + 2 * t * (x1 - cx), 2 * (1 - t) * (cy - y0) + 2 * t * (y1 - cy); tl = math.hypot(tx, ty); tx, ty = tx / tl, ty / tl
-            r = (w0 + (w1 - w0) * t) / 2; pts.append((x, y, tx, ty, r))
-            esq.append((x - ty * r, y + tx * r)); dir_.append((x + ty * r, y - tx * r))
-        def meia(x, y, tx, ty, r, s_):   # meia-lua na ponta, de «esq» para «dir» (s_=1 no fim, -1 no início)
-            return [(x + r * (-ty * math.cos(a) * s_ + tx * math.sin(a) * s_), y + r * (tx * math.cos(a) * s_ + ty * math.sin(a) * s_))
-                    for a in (math.pi * k / (cap + 1) for k in range(1, cap + 1))]
-        return esq + meia(*pts[-1], 1) + dir_[::-1] + meia(*pts[0], -1)
-    return [traco((.24, .27), (.77, .78), .15, .10, .05), traco((1.10, -.12), (.25, .78), .07, .16, -.07)]
-
-def marca_svg(n=18, cap=7, casas=1):
-    """SVG da marca «à mão» (viewBox 0 0 49 48; caixa de 40 com origem em 2,7), para colar no site."""
-    f = lambda v: ("%.*f" % (casas, v)).rstrip("0").rstrip(".")
-    ds = ["M" + "L".join(f"{f(2 + 40 * x)} {f(7 + 40 * y)}" for x, y in pol) + "Z" for pol in tracos_mao(n, cap)]
-    return '<rect x="3.7" y="8.7" width="36.6" height="36.6" rx="7.4"/>' + "".join(f'<path d="{d}"/>' for d in ds)
-
-def marca(h, cor, escuro=False, mao=False):
-    """A caixa do boletim de voto com a cruz (RGBA, altura h). mao=True: cruz desenhada à mão, a sair da caixa."""
+def marca(h, cor, escuro=False):
+    """A caixa do boletim de voto com a cruz (RGBA, h x h píxeis)."""
     k = 4; n = h * k; borda = rgb("#ffffff" if escuro else NIGHT)
-    if mao:
-        u = n / 48; im = Image.new("RGBA", (round(n * 49 / 48), n), (*borda, 0)); d = ImageDraw.Draw(im)
-        d.rounded_rectangle([2 * u, 7 * u, 42 * u, 47 * u], round(9.1 * u), fill="#ffffff", outline=borda, width=round(3.4 * u))
-        for pol in tracos_mao(40): d.polygon([((2 + 40 * x) * u, (7 + 40 * y) * u) for x, y in pol], fill=cor)
-        return im.resize((im.width // k, h), Image.LANCZOS)
     im = Image.new("RGBA", (n, n), (*borda, 0)); d = ImageDraw.Draw(im)
     d.rounded_rectangle([0, 0, n - 1, n - 1], round(n * 0.24), fill="#ffffff", outline=borda, width=round(n * 0.08))
     a, b, lw = n * 0.31, n * 0.69, round(n * 0.115)
@@ -126,20 +97,18 @@ def marca(h, cor, escuro=False, mao=False):
         for ex, ey in ((x0, y0), (x1, y1)): d.ellipse([ex - lw / 2, ey - lw / 2, ex + lw / 2, ey + lw / 2], fill=cor)
     return im.resize((h, h), Image.LANCZOS)
 
-def logo(h, cor, sub=None, escuro=False, lista="B", mao=False):
+def logo(h, cor, sub=None, escuro=False, lista="B"):
     """Logótipo: caixa com cruz + «Lista B» (+ linha do órgão). RGBA, fundo transparente, altura h."""
     c1 = rgb("#ffffff" if escuro else INK); cb = mix(cor, "#ffffff", 0.42) if escuro else rgb(cor)
     c2 = mix("#ffffff", NIGHT, 0.76) if escuro else rgb(MUTED)
     f1 = fontpx("serif", round(h * (0.70 if sub else 0.88)), 700, 30)   # opsz baixo: traços mais cheios, lê-se melhor
     f2 = fontpx("sans", round(h * 0.27), 600, 20)
-    m = marca(h, cor, escuro, mao); mw = m.width if not mao else round(h * 42 / 48)
     gap = round(h * 0.30); w1 = f1.getlength("Lista "); wb = f1.getlength(lista)
     wt = max(w1 + wb, f2.getlength(sub) if sub else 0)
-    x = mw + gap + (round(h * 0.06) if mao else 0)
-    im = Image.new("RGBA", (int(x + wt + h * 0.06) + 2, h), (*c1, 0)); im.alpha_composite(m)
-    base = round(h * (0.62 if mao else 0.60)) if sub else round(h * 0.81)
-    _texto(im, (x, base), "Lista ", f1, c1); _texto(im, (x + w1, base), lista, f1, cb)
-    if sub: _texto(im, (x + round(h * 0.02), round(h * 0.965)), sub, f2, c2)
+    im = Image.new("RGBA", (int(h + gap + wt + h * 0.06) + 2, h), (*c1, 0)); im.alpha_composite(marca(h, cor, escuro))
+    base = round(h * (0.60 if sub else 0.81))
+    _texto(im, (h + gap, base), "Lista ", f1, c1); _texto(im, (h + gap + w1, base), lista, f1, cb)
+    if sub: _texto(im, (h + gap + round(h * 0.02), round(h * 0.965)), sub, f2, c2)
     return im
 
 def tw(s, ft, track=0): return ft.getlength(s) / S + track * max(0, len(s) - 1)
@@ -357,7 +326,7 @@ def partilha(chave):
     site = ler_site(POSTERS[chave]["pasta"]); AC = site["cor"]; S0, S = S, 1.0
     try:
         c = Canvas(NIGHT, (1200, 630)); c.night(0, 630, AC, grid=False)
-        c.cola(80, 60, logo(96, AC, f"{site['orgao']} · {site['instituicao']} {site['ano']}", escuro=True, lista=site["lista"], mao=True))
+        c.cola(80, 64, logo(92, AC, f"{site['orgao']} · {site['instituicao']} {site['ano']}", escuro=True, lista=site["lista"]))
         for hs in range(78, 40, -2):
             fr, fi = font("serif", hs, 700), font("serif-i", hs, 700)
             if max(tw(site["titulo"], fr), tw(site["destaque"], fi)) <= 1040: break
@@ -371,13 +340,9 @@ def partilha(chave):
 def logos(chave):
     site = ler_site(POSTERS[chave]["pasta"]); AC = site["cor"]; d = os.path.join(ROOT, "assets", "logo"); os.makedirs(d, exist_ok=True)
     sub = f"{site['orgao']} · {site['instituicao']} {site['ano']}"
-    logo(256, AC, sub, lista=site["lista"], mao=True).save(os.path.join(d, f"lista-b-{chave}.png"))
-    logo(256, AC, sub, escuro=True, lista=site["lista"], mao=True).save(os.path.join(d, f"lista-b-{chave}-escuro.png"))
-    marca(512, AC, mao=True).save(os.path.join(d, f"marca-{chave}.png"))
+    logo(256, AC, sub, lista=site["lista"]).save(os.path.join(d, f"lista-b-{chave}.png"))
+    logo(256, AC, sub, escuro=True, lista=site["lista"]).save(os.path.join(d, f"lista-b-{chave}-escuro.png"))
+    marca(512, AC).save(os.path.join(d, f"marca-{chave}.png"))
 
 if __name__ == "__main__":
-    import sys
-    if "--svg" in sys.argv: print(marca_svg()); sys.exit()
-    for k in POSTERS:
-        logos(k); partilha(k)
-        if "--sem-cartazes" not in sys.argv: cartaz(k)
+    for k in POSTERS: logos(k); partilha(k); cartaz(k)
