@@ -26,7 +26,7 @@ INK, MUTED, PAPER, CARD, LINE, NIGHT = "#161d33", "#5b6579", "#f8f6f1", "#ffffff
 # Nomes abreviados (os que cada pessoa usa no SIGARRA), para caberem em letra grande.
 NOMES = {
     "202378": "Joaquim Esteves da Silva", "202640": "Alexandre Magalhães", "202659": "José Luís Santos",
-    "202781": "Luís Santos", "202806": "Carlos Pereira", "203278": "António Guerner Dias",
+    "202781": "Luís Belchior Santos", "202806": "Carlos Pereira", "203278": "António Guerner Dias",
     "203285": "José Ferreira Alves", "210334": "Sílvio Gama", "232080": "Rita Gaio",
     "236853": "José Gonçalves", "238695": "Manuel Eduardo Correia", "239074": "Alexandre Lima",
     "248004": "Eduardo Marques", "249128": "Paulo Marques", "249438": "Helena Ribeiro",
