@@ -22,8 +22,11 @@
   document.title = `Lista ${S.lista} · ${S.orgao} · ${S.instituicao} ${S.ano}`;
 
   // ---------- Topo ----------
-  $("#brand").innerHTML = `<span class="badge">${esc(S.lista)}</span>
-    <span class="brand-txt"><b>Lista ${esc(S.lista)} · ${esc(S.orgao)}</b><span>${esc(S.nomeLista)} · ${esc(S.instituicao)} ${esc(S.ano)}</span></span>`;
+  // Logótipo: a caixa do boletim com a cruz + «Lista B» + órgão
+  const MARK = '<svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="10"/><path d="M16 16l16 16M32 16L16 32"/></svg>';
+  const logo = (sub) => `${MARK}<span class="logo-txt"><b>Lista <i>${esc(S.lista)}</i></b><span>${sub}</span></span>`;
+  const logoSub = `${esc(S.orgao)}<em> · ${esc(S.instituicao)} ${esc(S.ano)}</em>`;
+  $("#brand").innerHTML = logo(logoSub);
   const nav = $("#nav");
   $("#menu").addEventListener("click", (ev) => {
     nav.classList.toggle("open");
@@ -60,8 +63,8 @@
   $("#vote-card").innerHTML = `
     <div class="lbl">No boletim de voto</div>
     <div class="ballot">
-      <span class="box">${svg('<path d="M5 5l14 14M19 5L5 19"/>')}</span>
-      <span class="who"><b>Lista ${esc(S.lista)}</b><span>${esc(S.orgao)}</span></span>
+      ${MARK}
+      <span class="who"><b>Lista <i>${esc(S.lista)}</i></b><span>${esc(S.orgao)}</span></span>
     </div>
     <div class="date">${esc(e.dataTexto || "")}</div>
     <div class="countdown" id="countdown" aria-live="polite"></div>
@@ -201,8 +204,7 @@
   const outro = [noDominio ? `https://${S.dominioOutro}/` : (isCR ? "../cientifico/" : "../representantes/"),
     isCR ? "Lista B ao Conselho Científico" : "Lista B ao Conselho de Representantes"];
   const doc0 = (e.documentos || [])[0];
-  $("#foot").innerHTML = `<div class="foot-brand"><span class="badge">${esc(S.lista)}</span>
-      <span><b>Lista ${esc(S.lista)} · ${esc(S.orgao)}</b>${esc(S.nomeLista)} · ${esc(S.instituicao)} ${esc(S.ano)}</span></div>
+  $("#foot").innerHTML = `<div class="foot-brand">${logo(logoSub)}</div>
     <nav aria-label="Rodapé"><a href="${outro[0]}">${outro[1]} →</a>${doc0 ? `<a href="${esc(doc0.url)}" target="_blank" rel="noopener">Eleições no SIGARRA ↗</a>` : ""}<a href="#topo">Voltar ao topo ↑</a></nav>`;
 
   // ---------- Navegação ativa + entrada suave ----------

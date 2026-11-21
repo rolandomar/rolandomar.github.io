@@ -26,3 +26,8 @@ python3 -m http.server 8000   # abrir http://localhost:8000/cientifico/
 ```
 
 Publicado via GitHub Pages (branch `main`, raiz).
+
+## Cartazes (A3)
+`cartazes/cartaz-cc.pdf` e `cartazes/cartaz-cr.pdf` (A3, 300 dpi; há também `.png`) seguem o visual de cada site.
+São gerados por `python3 cartazes/gerar.py`, que lê candidatos, fotos e cores dos `data.js`.
+As frases curtas das prioridades e os nomes abreviados estão no início desse script.
