@@ -43,7 +43,7 @@ POSTERS = {
             ("Transparência, independência e debate", "Fóruns regulares de discussão e um Conselho autónomo dos restantes órgãos de gestão."),
             ("Planeamento e valorização das pessoas", "Plano plurianual de recursos docentes, renovação geracional e combate à precariedade."),
             ("Qualidade académica e inovação", "Rigor pedagógico e científico acima de lógicas administrativas."),
-            ("Região e sociedade", "Uma escola de portas abertas, em cooperação com o ecossistema regional."),
+            ("Interação com a Sociedade", "Uma escola de portas abertas, em cooperação com o ecossistema regional."),
         ],
     },
     "cr": {
