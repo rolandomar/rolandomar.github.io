@@ -34,7 +34,7 @@ window.SITE = {
       },
       {
         "titulo": "Participação, Proximidade e Diálogo Aberto",
-        "texto": "Atuaremos como o elemento de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários — de todas as carreiras — sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
+        "texto": "Atuaremos como o elemento de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários, de todas as carreiras, sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
       },
       {
         "titulo": "Interação com a Região e Sociedade",
@@ -120,7 +120,7 @@ window.SITE = {
           {
             "titulo": "3. Participação, Proximidade e Diálogo Aberto",
             "texto": [
-              "Atuaremos como o elemento de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários — de todas as carreiras — sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
+              "Atuaremos como o elemento de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários, de todas as carreiras, sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
             ],
             "itens": []
           },
@@ -215,12 +215,12 @@ window.SITE = {
         titulo: "Efetivos",
         membros: [
           { nome: "Luís Manuel das Neves Belchior Faia dos Santos", categoria: "Professor Catedrático", unidade: "DQB", departamento: "Departamento de Química e Bioquímica", foto: "fotos/202781.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=202781",
-            bio: "Professor Catedrático no Departamento de Química e Bioquímica da FCUP, onde desenvolve atividade de docência e investigação. É Diretor do CIQUP – Centro de Investigação em Química da Universidade do Porto e membro do Conselho Científico da FCUP." },
+            bio: "Professor Catedrático no Departamento de Química e Bioquímica da FCUP, onde desenvolve atividade de docência e investigação. É Diretor do CIQUP, Centro de Investigação em Química da Universidade do Porto e membro do Conselho Científico da FCUP." },
           { nome: "Ana Rita Pires Gaio", categoria: "Professora Auxiliar", unidade: "DM", departamento: "Departamento de Matemática", foto: "fotos/232080.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=232080",
             bio: "Professora Auxiliar no Departamento de Matemática e investigadora integrada do CMUP. Foi vice-diretora do Departamento e diretora da Licenciatura em Matemática Aplicada. Trabalha em modelos de regressão, aprendizagem estatística e bioestatística, com larga experiência em consultoria em Epidemiologia e Saúde Pública." },
           { nome: "Rolando da Silva Martins", categoria: "Professor Auxiliar", unidade: "DCC", departamento: "Departamento de Ciência de Computadores", foto: "fotos/571189-v2.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=571189",
             bio: ["Professor Auxiliar no Departamento de Ciência de Computadores da FCUP, com investigação centrada em sistemas distribuídos seguros e infraestruturas de suporte à privacidade. Foi membro do Intel Science and Technology Center e do Parallel Data Lab da Carnegie Mellon University.",
-                  "É membro do Conselho Científico da FCUP, vice-diretor do C3P – Centro de Cibersegurança e Privacidade da U.Porto e vice-chair do IEEE CS Portugal Chapter. Fundou a SafeHelm, spin-off da U.Porto dedicada a infraestruturas computacionais seguras."] },
+                  "É membro do Conselho Científico da FCUP, vice-diretor do C3P, Centro de Cibersegurança e Privacidade da U.Porto e vice-chair do IEEE CS Portugal Chapter. Fundou a SafeHelm, spin-off da U.Porto dedicada a infraestruturas computacionais seguras."] },
           { nome: "Orfeu Bertolami Neto", categoria: "Professor Catedrático", unidade: "DFA", departamento: "Departamento de Física e Astronomia", foto: "fotos/485238.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=485238",
             bio: "Físico teórico que trabalha em cosmologia, física das astropartículas, gravitação clássica e quântica, física fundamental no espaço e ciência do Sistema Terrestre. É membro do Conselho de Representantes da FCUP e da Comissão Científica Restrita do Departamento de Física e Astronomia." },
           { nome: "Alexandre Martins Campos de Lima", categoria: "Professor Associado", unidade: "DGAOT", departamento: "Departamento de Geociências, Ambiente e Ordenamento do Território", foto: "fotos/239074.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=239074",
@@ -246,7 +246,7 @@ window.SITE = {
           { nome: "Inês de Castro Dutra", categoria: "Professora Associada", unidade: "DCC", departamento: "Departamento de Ciência de Computadores", foto: "fotos/427256.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=427256",
             bio: "Professora Associada no Departamento de Ciência de Computadores. Dirige o Mestrado em Inteligência Artificial, é membro do Conselho Pedagógico da FCUP e da Comissão de Acompanhamento do Mestrado em Ciência de Dados, e é docente responsável pelo curso de educação contínua em IA Generativa." },
           { nome: "Luís Miguel Soares Ribeiro Leite da Cunha", categoria: "Professor Associado", unidade: "DGAOT", departamento: "Departamento de Geociências, Ambiente e Ordenamento do Território", foto: "fotos/405494.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=405494",
-            bio: "Professor Associado no DGAOT e investigador integrado do GreenUPorto – Centro de Investigação em Produção Agroalimentar Sustentável, onde coordena o grupo de Perceção do Consumidor e Análise Sensorial. Dirige o Mestrado em Ciências do Consumo e Nutrição e é membro da Comissão de Ética e da Comissão Executiva do Departamento." },
+            bio: "Professor Associado no DGAOT e investigador integrado do GreenUPorto, Centro de Investigação em Produção Agroalimentar Sustentável, onde coordena o grupo de Perceção do Consumidor e Análise Sensorial. Dirige o Mestrado em Ciências do Consumo e Nutrição e é membro da Comissão de Ética e da Comissão Executiva do Departamento." },
           { nome: "Carlos Manuel de Melo Pereira", categoria: "Professor Associado", unidade: "DQB", departamento: "Departamento de Química e Bioquímica", foto: "fotos/202806.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=202806",
             bio: "Professor Associado no Departamento de Química e Bioquímica. Dirige o Mestrado em Métodos Avançados e Acreditação em Análise Química e preside à Comissão Científica do Curso de Estudos Avançados em Projeto Científico e Tecnológico." },
           { nome: "José Alberto Álvares Pereira Gonçalves", categoria: "Professor Auxiliar", unidade: "DGAOT", departamento: "Departamento de Geociências, Ambiente e Ordenamento do Território", foto: "fotos/236853.jpg", link: "https://sigarra.up.pt/fcup/pt/func_geral.formview?p_codigo=236853",

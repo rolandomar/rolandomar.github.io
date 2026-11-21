@@ -52,7 +52,7 @@
     const body = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Lista " + S.lista + "//FCUP//PT", "BEGIN:VEVENT",
       "UID:eleicao-" + stamp(start) + "@fcup-lista-" + String(S.lista).toLowerCase(),
       "DTSTAMP:" + stamp(new Date()), "DTSTART:" + stamp(start), "DTEND:" + stamp(end),
-      "SUMMARY:Eleições FCUP — " + S.orgao + " (votar Lista " + S.lista + ")",
+      "SUMMARY:Eleições FCUP, " + S.orgao + " (votar Lista " + S.lista + ")",
       "LOCATION:" + String(e.local || "").replace(/,/g, "\\,"),
       "URL:" + location.href.split("#")[0], "END:VEVENT", "END:VCALENDAR"].join("\r\n");
     ics = "data:text/calendar;charset=utf-8," + encodeURIComponent(body);
