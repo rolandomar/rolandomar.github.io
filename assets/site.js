@@ -101,7 +101,7 @@
   // ---------- Manifesto ----------
   const m = S.manifesto || {};
   const itens = (l) => (l || []).length ? `<ul class="mitems">${l.map((x) => `<li><b>${esc(x.t)}.</b> ${esc(x.d)}</li>`).join("")}</ul>` : "";
-  const secHtml = (s, i) => `<details class="msec"${i === 0 ? " open" : ""}><summary><span class="i">${i + 1}</span><span class="t">${esc(s.titulo)}</span></summary><div class="msec-body">
+  const secHtml = (s, i) => `<details class="msec"><summary><span class="i">${i + 1}</span><span class="t">${esc(s.titulo)}</span></summary><div class="msec-body">
       ${paras(s.texto)}${itens(s.itens)}
       ${(s.subsec || []).map((u) => `<h4>${esc(u.titulo)}</h4>${paras(u.texto)}${itens(u.itens)}`).join("")}
     </div></details>`;
