@@ -37,7 +37,7 @@ window.SITE = {
         "texto": "Rigor pedagógico e científico acima de lógicas administrativas, e reflexão sobre o impacto da IA no ensino e na investigação."
       },
       {
-        "titulo": "Região e sociedade",
+        "titulo": "Interação com a Sociedade",
         "texto": "Uma escola de portas abertas, cooperação com o ecossistema regional e aposta na divulgação científica e na ciência cidadã."
       }
     ]
