@@ -26,15 +26,15 @@ window.SITE = {
     "intro": "",                           // sem frase por baixo do título
     "itens": [
       {
-        "titulo": "Transparência, independência e debate",
-        "texto": "Fóruns regulares de discussão, voz ativa dos mais novos e um Conselho autónomo dos restantes órgãos de gestão, defendendo que quem o dirige seja eleito pelo próprio órgão."
+        "titulo": "Transparência, independência e debate coletivo",
+        "texto": "Fóruns regulares de discussão, voz ativa dos mais novos e um Conselho autónomo dos restantes órgãos de gestão, defendendo que o seu Presidente seja eleito pelo próprio órgão."
       },
       {
-        "titulo": "Planeamento e valorização das pessoas",
+        "titulo": "Planeamento estratégico e valorização das pessoas",
         "texto": "Plano plurianual de recursos docentes, renovação geracional, combate à precariedade e fundos de transição para investigadores."
       },
       {
-        "titulo": "Qualidade académica e inovação",
+        "titulo": "Qualidade académica, inovação pedagógica",
         "texto": "Rigor pedagógico e científico acima de lógicas administrativas, e reflexão sobre o impacto da IA no ensino e na investigação."
       },
       {
@@ -69,7 +69,7 @@ window.SITE = {
           },
           {
             "t": "Independência nos órgãos de gestão",
-            "d": "Garantir a total autonomia do Conselho Científico na tomada de decisões, assegurando que a visão científica e técnica da comunidade prevalece de forma livre, justa e isenta. Defendemos que o diretor do Conselho Científico deve ser eleito pelo órgão e nesse sentido, lutaremos por promover as propostas de alteração estatutárias."
+            "d": "Garantir a total autonomia do Conselho Científico na tomada de decisões, assegurando que a visão científica e técnica da comunidade prevalece de forma livre, justa e isenta. Defendemos que o Presidente do Conselho Científico deve ser eleito pelo órgão e nesse sentido, lutaremos por promover as propostas de alteração estatutárias."
           },
           {
             "t": "Órgão interventivo e participativo",
@@ -135,7 +135,7 @@ window.SITE = {
         ]
       },
       {
-        "titulo": "Qualidade académica e inovação pedagógica",
+        "titulo": "Qualidade académica, inovação pedagógica",
         "itens": [
           {
             "t": "Cultura focada na qualidade",
@@ -153,7 +153,7 @@ window.SITE = {
         "subsec": []
       },
       {
-        "titulo": "Interação com a região e a sociedade",
+        "titulo": "Interação com a região e sociedade",
         "itens": [
           {
             "t": "Abertura à sociedade",
