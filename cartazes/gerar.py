@@ -40,9 +40,9 @@ POSTERS = {
         "pasta": "cientifico",
         "prio_titulo": "Quatro pilares para o Conselho Científico",
         "prios": [
-            ("Transparência, independência e debate", "Fóruns regulares de discussão e um Conselho autónomo dos restantes órgãos de gestão."),
-            ("Planeamento e valorização das pessoas", "Plano plurianual de recursos docentes, renovação geracional e combate à precariedade."),
-            ("Qualidade académica e inovação", "Rigor pedagógico e científico acima de lógicas administrativas."),
+            ("Transparência, independência e debate coletivo", "Fóruns regulares de discussão e um Conselho autónomo dos restantes órgãos de gestão."),
+            ("Planeamento estratégico e valorização das pessoas", "Plano plurianual de recursos docentes, renovação geracional e combate à precariedade."),
+            ("Qualidade académica, inovação pedagógica", "Rigor pedagógico e científico acima de lógicas administrativas."),
             ("Interação com a Sociedade", "Uma escola de portas abertas, em cooperação com o ecossistema regional."),
         ],
     },
@@ -51,10 +51,10 @@ POSTERS = {
         "prio_titulo": "Cinco eixos de supervisão e influência",
         "prios": [
             ("Estratégia e Modernização", "O CR como catalisador estratégico da Faculdade."),
-            ("Escrutínio e Compromisso Transparente", "Fiscalização rigorosa e permanente das atividades de gestão."),
-            ("Participação, Proximidade e Diálogo Aberto", "Elemento de ligação entre a comunidade e os órgãos executivos."),
-            ("Interação com a Região e Sociedade", "Parcerias estratégicas e laços com o tecido regional e social."),
-            ("Uma Faculdade a Pensar no Futuro", "Preparar o futuro, com pluralidade e renovação democrática."),
+            ("Escrutínio e Compromisso", "Fiscalização rigorosa e permanente das atividades de gestão."),
+            ("Participação e Independência", "Ligação entre a comunidade académica e os órgãos executivos."),
+            ("Interação com a Sociedade", "Parcerias estratégicas e laços mais estreitos com a sociedade."),
+            ("Uma Faculdade a Pensar no Futuro", "Revisão dos Estatutos com consulta e participação da comunidade."),
         ],
     },
 }
@@ -174,6 +174,7 @@ def ler_site(pasta):
     g = lambda k: re.search(r'"?%s"?:\s*"([^"]*)"' % k, s).group(1)
     site = {k: g(k) for k in ("lista", "orgao", "instituicao", "ano", "dominio", "cor", "lead")}
     site["titulo"], site["destaque"] = re.search(r'hero:\s*\{\s*"titulo":\s*"([^"]*)",\s*"destaque":\s*"([^"]*)"', s).groups()
+    site["sem_categoria"] = bool(re.search(r'"?semCategoria"?:\s*true', s))   # como no site: sem «Professor Auxiliar», etc.
     site["grupos"] = []
     for m in re.finditer(r'titulo:\s*"(Efetivos|Suplentes)",\s*membros:\s*\[(.*?)\n\s*\],', s, re.S):
         mem = [dict(nome=a, categoria=b, unidade=c, foto=d_, cod=e) for a, b, c, d_, e in re.findall(
@@ -298,8 +299,11 @@ def cartaz(chave):
             ax, ay = x0 + 30, ry + 4
             c.im.paste(im, (px(ax), px(ay)), mask)
             tx = ax + av + 11
-            c.text(tx, ry + rh * 0.46, NOMES.get(m["cod"], m["nome"]), nf, INK)
-            c.text(tx, ry + rh * 0.80, m["categoria"], cf, MUTED)
+            if site["sem_categoria"]:
+                c.text(tx, ry + rh / 2 + 0.3, NOMES.get(m["cod"], m["nome"]), nf, INK, "lm")
+            else:
+                c.text(tx, ry + rh * 0.46, NOMES.get(m["cod"], m["nome"]), nf, INK)
+                c.text(tx, ry + rh * 0.80, m["categoria"], cf, MUTED)
             tgw = tw(m["unidade"], tgf, 0.5) + 14
             c.rrect(x0 + colw - 10 - tgw, ry + rh / 2 - 8, x0 + colw - 10, ry + rh / 2 + 8, 5, fill=AC_SOFT)
             c.text(x0 + colw - 10 - tgw / 2, ry + rh / 2 + 0.3, m["unidade"], tgf, AC, "mm", track=0.5)
