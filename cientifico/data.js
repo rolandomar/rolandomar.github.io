@@ -22,7 +22,8 @@ window.SITE = {
 
   prioridades: {
     "titulo": "Quatro pilares para o Conselho Científico",
-    "intro": "Os pilares fundamentais que vão guiar a nossa ação no próximo mandato.",
+    "etiqueta": "",                        // sem rótulo por cima do título
+    "intro": "",                           // sem frase por baixo do título
     "itens": [
       {
         "titulo": "Transparência, independência e debate",
