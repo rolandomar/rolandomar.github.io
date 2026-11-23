@@ -22,7 +22,8 @@ window.SITE = {
 
   prioridades: {
     "titulo": "Cinco eixos de supervisão e influência",
-    "intro": "Enquanto órgão colegial representativo e de fiscalização, propomo-nos intervir firmemente através de cinco eixos essenciais:",
+    "etiqueta": "",                        // sem rótulo por cima do título
+    "intro": "",                           // sem frase por baixo do título
     "itens": [
       {
         "titulo": "Estratégia e Modernização",
