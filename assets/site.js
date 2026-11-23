@@ -132,6 +132,9 @@
   // ---------- Candidatos (lista) ----------
   $("#cand-head").innerHTML = `<p class="eyebrow">A lista</p><h2>${esc(S.candidatos?.titulo)}</h2><p>${esc(S.candidatos?.intro)}</p>`;
   let filtro = "", unidade = "";
+  // "semCategoria": true no data.js esconde a categoria profissional (ex.: «Professor Auxiliar») nos cartões e nas fichas.
+  const semCat = !!S.candidatos?.semCategoria;
+  if (semCat) $("#search").placeholder = "Pesquisar por nome ou departamento…";
   $("#chips").innerHTML = units.length > 1
     ? [`<button class="chip" type="button" aria-pressed="true" data-u="">Todos</button>`].concat(units.map((u) => `<button class="chip" type="button" aria-pressed="false" data-u="${esc(u)}">${esc(u)}</button>`)).join("")
     : "";
@@ -153,12 +156,12 @@
     grupos.forEach((g) => {
       const list = all.filter((c) => c.grupo === g.titulo)
         .filter((c) => !unidade || c.unidade === unidade)
-        .filter((c) => !f || norm([c.nome, c.categoria, c.unidade, c.departamento].join(" ")).includes(f));
+        .filter((c) => !f || norm([c.nome, semCat ? "" : c.categoria, c.unidade, c.departamento].join(" ")).includes(f));
       if (!list.length) return;
       html += `<h3 class="group-title">${esc(g.titulo)} <small>${list.length}</small></h3><div class="cands">` +
         list.map((c) => `<button class="cand" type="button" data-i="${all.indexOf(c)}">
           <span class="av-wrap"><span class="av">${photo(c)}</span><span class="ord">${c.ordem}</span></span>
-          <span class="meta"><b>${esc(c.nome)}</b><span class="cat">${esc(c.categoria)}</span>${c.unidade ? `<span class="tag">${esc(c.unidade)}</span>` : ""}</span>
+          <span class="meta"><b>${esc(c.nome)}</b>${semCat ? "" : `<span class="cat">${esc(c.categoria)}</span>`}${c.unidade ? `<span class="tag">${esc(c.unidade)}</span>` : ""}</span>
           <span class="go" aria-hidden="true">›</span>
         </button>`).join("") + `</div>`;
     });
@@ -173,7 +176,7 @@
       <div class="ph">${photo(c)}</div>
       <div class="txt"><span class="role">${esc(c.grupo)} · n.º ${c.ordem}</span>
         <h3>${esc(c.nome)}</h3>
-        <div class="sub">${esc([c.categoria, c.departamento || c.unidade].filter(Boolean).join(" · "))}</div>
+        <div class="sub">${esc([semCat ? "" : c.categoria, c.departamento || c.unidade].filter(Boolean).join(" · "))}</div>
         ${paras(c.bio || "Biografia a acrescentar.")}
         ${c.link ? `<p><a href="${esc(c.link)}" target="_blank" rel="noopener">Página no SIGARRA →</a></p>` : ""}
       </div></div><button class="close" type="button" aria-label="Fechar">×</button></div>`;

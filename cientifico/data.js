@@ -181,7 +181,8 @@ window.SITE = {
 
   candidatos: {
     titulo: "Os nossos candidatos",
-    intro: "Nomes pela ordem do boletim de voto. Delegado da lista: António Guerner Dias (Professor Auxiliar, DGAOT). Clique num candidato para ver a biografia. Informação recolhida do SIGARRA da FCUP.",
+    semCategoria: true,   // não mostrar a categoria profissional (ex.: «Professor Auxiliar») nos candidatos
+    intro: "Nomes pela ordem do boletim de voto. Delegado da lista: António Guerner Dias (DGAOT). Clique num candidato para ver a biografia. Informação recolhida do SIGARRA da FCUP.",
     // Campos: nome, categoria, unidade (sigla do departamento, usada no filtro),
     // departamento (nome completo), foto, bio (texto ou lista de parágrafos), link.
     grupos: [
