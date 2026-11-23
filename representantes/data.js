@@ -58,7 +58,9 @@ window.SITE = {
       {
         "titulo": "Princípios fundamentais: o nosso referencial de governação",
         "texto": [
-          "A nossa ação no CR será guiada por princípios que colocam as pessoas e o orgulho de pertencer à FCUP no centro do debate estratégico, instando a Direção e os restantes conselhos a assegurarem:",
+          "A nossa ação no CR será orientada por princípios que colocam as pessoas, o rigor, a transparência, a participação e o sentido de pertença à FCUP no centro das nossas decisões e prioridades estratégicas, instando a Direção e os restantes Conselhos a assegurarem as seguintes diretrizes:"
+        ],
+        "fecho": [
           "Assumimos estes valores como o guião essencial da nossa ação no Conselho de Representantes e como o referencial decisivo para a eleição do Diretor."
         ],
         "itens": [
@@ -68,15 +70,15 @@ window.SITE = {
           },
           {
             "t": "Pluralismo e Sentido de Escola",
-            "d": "Valorizar a diversidade da Faculdade e defender a descentralização de processos junto dos órgãos de gestão."
+            "d": "Valorizar a diversidade da FCUP e defender a descentralização de processos junto dos órgãos de gestão."
           },
           {
             "t": "Independência e Equilíbrio Institucional",
-            "d": "Velar pelo respeito e pela autonomia funcional de cada órgão da FCUP, garantindo uma clara separação entre governação e execução."
+            "d": "Velar pelo respeito e pela autonomia funcional de cada órgão de gestão da FCUP, garantindo uma separação entre governação e execução."
           },
           {
             "t": "Transparência e Confiança",
-            "d": "Exigir total clareza na partilha de informação e uma rigorosa prestação de contas por parte dos órgãos executivos."
+            "d": "Exigir clareza na partilha de informação e uma rigorosa prestação de contas por parte dos órgãos e garantir um tratamento igualitário na tomada de decisão."
           },
           {
             "t": "Representatividade Efetiva",
@@ -88,10 +90,10 @@ window.SITE = {
           },
           {
             "t": "Valorização das Pessoas",
-            "d": "Recomendar e incentivar políticas que priorizem o bem-estar, a dignificação, a progressão e o reconhecimento de todos os recursos humanos."
+            "d": "Recomendar e incentivar políticas que priorizem o bem-estar, a dignificação, a progressão e o reconhecimento de todos os recursos humanos. Reconhecimento da importância da diversidade das áreas de conhecimento na FCUP e valorização da ciência fundamental."
           },
           {
-            "t": "Portas Abertas à Região",
+            "t": "Portas Abertas à Sociedade",
             "d": "Impulsionar a ligação da Faculdade ao exterior, incentivando a Direção a projetar a nossa ciência e o nosso talento na sociedade."
           }
         ],
