@@ -52,7 +52,7 @@ window.SITE = {
     "citacao": "O sucesso da agenda científica, o rigor do projeto educativo e a relevância da nossa ligação à sociedade exigem uma governação atenta e uma fiscalização ativa. Este é o compromisso que assumimos: influenciar o rumo de Ciências para unir a nossa comunidade em torno de uma faculdade melhor, mais justa e com ainda mais prestígio!",
     "paragrafos": [
       "A Faculdade de Ciências da Universidade do Porto (FCUP) é uma instituição de referência, comprometida com a investigação de mérito internacional, o ensino de excelência e a transferência de conhecimento com impacto real na sociedade. Esta candidatura ao Conselho de Representantes (CR) nasce da convicção profunda de que o futuro de Ciências depende da capacidade de influenciarmos e promovermos uma governação mais moderna, transparente e competitiva, assente num ambiente interno que estimule uma maior participação de todos nos processos de decisão.",
-      "Apresentamos uma lista que alia a experiência à energia renovadora duma nova geração, focada em construir uma Faculdade mais moderna, participativa, transparente e competitiva. Apostamos fortemente no reforço da voz da comunidade FCUP, cuja diversidade de perspetivas e ambição são o motor essencial para a modernização das nossas estruturas e para a criação de uma verdadeira e natural cultura de intervenção participativa na visão, ideias, objetivos, atividades e coesão na FCUP."
+      "Através de uma lista que alia a experiência à energia renovadora de uma nova geração, apostamos fortemente no reforço da voz da comunidade FCUP, cuja diversidade de perspetivas e ambição coletiva são o motor essencial para a modernização das nossas estruturas de gestão."
     ],
     "seccoes": [
       {
