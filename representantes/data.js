@@ -163,7 +163,7 @@ window.SITE = {
               },
               {
                 "t": "Renovação Geracional",
-                "d": "Incentivar a antecipação das saídas de docentes seniores para garantir transições de regência suaves e sem hiatos na qualidade do ensino."
+                "d": "Garantir a renovação de docentes de forma a evitar a existência de hiatos na qualidade do ensino de áreas específicas."
               }
             ]
           },
@@ -176,7 +176,7 @@ window.SITE = {
               },
               {
                 "t": "Mecanismos de Transição",
-                "d": "Propor à Direção o desenho de fundos de transição interna para assegurar a continuidade salarial de investigadores de excelência entre projetos."
+                "d": "Propor o desenho de fundos de transição interna para assegurar a continuidade salarial de investigadores."
               },
               {
                 "t": "Estabilização de Carreiras",
@@ -189,15 +189,15 @@ window.SITE = {
             "itens": [
               {
                 "t": "Centros de Investigação",
-                "d": "Promover uma reflexão estruturada entre os órgãos de gestão e as unidades de ID&I sediadas na FCUP para maximizar sinergias."
+                "d": "Promover uma reflexão estruturada entre os órgãos de gestão e as unidades de I&D sediadas na FCUP para maximizar sinergias."
               },
               {
                 "t": "Promoção da Ciência",
-                "d": "Estimular a criação de mecanismos internos que deem maior visibilidade internacional à ciência produzida na faculdade."
+                "d": "Estimular a criação de mecanismos internos que deem maior visibilidade à ciência e tecnologia produzidas na Faculdade."
               },
               {
                 "t": "Desburocratização",
-                "d": "Pressionar os órgãos executivos para a simplificação administrativa, para o reforço partilhado de laboratórios e para o apoio às carreiras dos jovens investigadores."
+                "d": "Promover a simplificação administrativa, para o reforço partilhado de laboratórios e para o apoio às carreiras dos jovens investigadores."
               }
             ]
           }
