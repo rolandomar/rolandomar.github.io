@@ -116,7 +116,7 @@
       <blockquote class="${String(m.citacao || "").length > 140 ? "long" : ""}">${esc(m.citacao)}</blockquote>
       ${secs.length > 1 ? `<button class="linkbtn" id="mtoggle" type="button">Abrir todas as secções</button>` : ""}
     </div>
-    <div class="body">${paras(m.paragrafos)}
+    <div class="body">${m.compacto ? [].concat(m.paragrafos || []).map((p) => `<p class="junto">${esc(p)}</p>`).join("") : paras(m.paragrafos)}
       ${secs.length ? `<div class="msecs">${secs.map(secHtml).join("")}</div>` : ""}
       ${paras(m.fecho)}
       ${(m.compromissos || []).length ? `<h3>Comprometemo-nos a</h3><ul>${m.compromissos.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}

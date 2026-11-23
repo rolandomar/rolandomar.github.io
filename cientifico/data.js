@@ -46,6 +46,7 @@ window.SITE = {
 
   manifesto: {
     "citacao": "Pelas Pessoas, Independência entre Órgãos, pela Qualidade, pela FCUP.",
+    "compacto": true,                      // parágrafos de abertura seguidos, sem linha em branco entre eles
     "paragrafos": [
       "Estimados Colegas, Docentes, Investigadores e Membros da Comunidade Académica,",
       "Apresentamos esta candidatura ao Conselho Científico da Faculdade de Ciências da Universidade do Porto (FCUP) com um sentido de responsabilidade e com uma visão para o futuro da nossa instituição. A FCUP é uma referência de qualidade na I&D e no ensino na Universidade do Porto e em Portugal. Para que continue na vanguarda da investigação nacional e internacional, assumimos um compromisso: colocar as pessoas e a qualidade no centro de todas as decisões. Uma instituição científica só é verdadeiramente forte quando valoriza o seu capital humano em prol da excelência académica e que é também interveniente e valorizada pela sociedade.",
