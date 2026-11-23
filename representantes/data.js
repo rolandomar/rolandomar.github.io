@@ -26,23 +26,23 @@ window.SITE = {
     "itens": [
       {
         "titulo": "Estratégia e Modernização",
-        "texto": "O CR deve ser o grande catalisador estratégico da Faculdade. Impulsionaremos debates e recomendações para que os órgãos de gestão promovam sinergias, infraestruturas modernas e metodologias de formação que coloquem a FCUP num patamar de elevada competitividade internacional."
+        "texto": "O CR deve ser o grande catalisador estratégico da Faculdade. Apoiar a realização de debates e recomendações que promovam sinergias, desenvolvimento de novas infraestruturas e metodologias de ensino que coloquem a FCUP num patamar de elevada competitividade internacional."
       },
       {
-        "titulo": "Escrutínio e Compromisso Transparente",
-        "texto": "Exerceremos uma fiscalização rigorosa e permanente sobre todas as atividades de gestão. Manteremos uma interação crítica e construtiva com a Direção, validando as ações que promovam a qualidade da Faculdade, mas exigindo sempre que as decisões executivas sejam devidamente fundamentadas e auditáveis perante a comunidade."
+        "titulo": "Escrutínio e Compromisso",
+        "texto": "Exercer uma fiscalização rigorosa e permanente sobre todas as atividades de gestão. Manter uma interação crítica e construtiva com a Direção, validando as ações que promovam a qualidade da Faculdade, mas exigindo que as decisões executivas sejam fundamentadas perante a comunidade."
       },
       {
-        "titulo": "Participação, Proximidade e Diálogo Aberto",
-        "texto": "Atuaremos como o elemento de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários, de todas as carreiras, sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
+        "titulo": "Participação e Independência",
+        "texto": "Estabelecer a ligação entre a comunidade académica e os órgãos executivos. Desenvolver canais de auscultação para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários sejam canalizadas para os órgãos competentes."
       },
       {
-        "titulo": "Interação com a Região e Sociedade",
-        "texto": "Dinamizaremos o papel do CR na definição das grandes linhas de orientação externa da faculdade. Incentivaremos e apoiaremos a Direção na criação de parcerias estratégicas, na valorização do conhecimento e no estreitar de laços com o tecido regional e social."
+        "titulo": "Interação com a Sociedade",
+        "texto": "Dinamizar o papel do CR na definição das grandes linhas de orientação. Incentivar e apoiar a Direção na criação de parcerias estratégicas, na valorização do conhecimento e no estreitar de laços com a sociedade."
       },
       {
         "titulo": "Uma Faculdade a Pensar no Futuro",
-        "texto": "Este mandato inicia-se num momento de transição estatutária, o que confere ao CR uma responsabilidade acrescida. Seremos proativos na proposta e aprovação de condições organizacionais e administrativas que preparem o futuro, assegurando a pluralidade e a renovação democrática de Ciências no final deste quadriénio."
+        "texto": "Enquadrados num momento de transição estatutária da Universidade, assegurar um processo de revisão dos Estatutos da FCUP que garanta a consulta e participação efetiva da comunidade académica. Neste processo, defenderemos que o Diretor da FCUP deve pertencer ao Conselho Científico por inerência e que o Presidente do Conselho Científico deve ser eleito pelo órgão."
       }
     ]
   },
@@ -106,35 +106,35 @@ window.SITE = {
           {
             "titulo": "1. Estratégia e Modernização",
             "texto": [
-              "O CR deve ser o grande catalisador estratégico da Faculdade. Impulsionaremos debates e recomendações para que os órgãos de gestão promovam sinergias, infraestruturas modernas e metodologias de formação que coloquem a FCUP num patamar de elevada competitividade internacional."
+              "O CR deve ser o grande catalisador estratégico da Faculdade. Apoiar a realização de debates e recomendações que promovam sinergias, desenvolvimento de novas infraestruturas e metodologias de ensino que coloquem a FCUP num patamar de elevada competitividade internacional."
             ],
             "itens": []
           },
           {
-            "titulo": "2. Escrutínio e Compromisso Transparente",
+            "titulo": "2. Escrutínio e Compromisso",
             "texto": [
-              "Exerceremos uma fiscalização rigorosa e permanente sobre todas as atividades de gestão. Manteremos uma interação crítica e construtiva com a Direção, validando as ações que promovam a qualidade da Faculdade, mas exigindo sempre que as decisões executivas sejam devidamente fundamentadas e auditáveis perante a comunidade."
+              "Exercer uma fiscalização rigorosa e permanente sobre todas as atividades de gestão. Manter uma interação crítica e construtiva com a Direção, validando as ações que promovam a qualidade da Faculdade, mas exigindo que as decisões executivas sejam fundamentadas perante a comunidade."
             ],
             "itens": []
           },
           {
-            "titulo": "3. Participação, Proximidade e Diálogo Aberto",
+            "titulo": "3. Participação e Independência",
             "texto": [
-              "Atuaremos como o elemento de ligação entre a comunidade e os órgãos executivos. Desenvolveremos canais de auscultação ativa para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários, de todas as carreiras, sejam efetivamente interpeladas junto da Direção e dos Conselhos Científico e Pedagógico."
+              "Estabelecer a ligação entre a comunidade académica e os órgãos executivos. Desenvolver canais de auscultação para garantir que as dúvidas e aspirações de docentes, investigadores, estudantes e funcionários sejam canalizadas para os órgãos competentes."
             ],
             "itens": []
           },
           {
-            "titulo": "4. Interação com a Região e Sociedade",
+            "titulo": "4. Interação com a Sociedade",
             "texto": [
-              "Dinamizaremos o papel do CR na definição das grandes linhas de orientação externa da faculdade. Incentivaremos e apoiaremos a Direção na criação de parcerias estratégicas, na valorização do conhecimento e no estreitar de laços com o tecido regional e social."
+              "Dinamizar o papel do CR na definição das grandes linhas de orientação. Incentivar e apoiar a Direção na criação de parcerias estratégicas, na valorização do conhecimento e no estreitar de laços com a sociedade."
             ],
             "itens": []
           },
           {
             "titulo": "5. Uma Faculdade a Pensar no Futuro",
             "texto": [
-              "Este mandato inicia-se num momento de transição estatutária, o que confere ao CR uma responsabilidade acrescida. Seremos proativos na proposta e aprovação de condições organizacionais e administrativas que preparem o futuro, assegurando a pluralidade e a renovação democrática de Ciências no final deste quadriénio."
+              "Enquadrados num momento de transição estatutária da Universidade, assegurar um processo de revisão dos Estatutos da FCUP que garanta a consulta e participação efetiva da comunidade académica. Neste processo, defenderemos que o Diretor da FCUP deve pertencer ao Conselho Científico por inerência e que o Presidente do Conselho Científico deve ser eleito pelo órgão."
             ],
             "itens": []
           }
