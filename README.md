@@ -12,14 +12,6 @@ Depois de alterar e fazer commit aqui, correr `./deploy.sh` para atualizar os do
 
 DNS em listab.pt: `cc` e `cr` como registos CNAME para `rolandomar.github.io`.
 
-### Pré-visualização (testes de layout)
-`./deploy.sh preview` publica os ficheiros tal como estão na pasta (qualquer ramo, mesmo sem commit) em
-**https://preview.cc.listab.pt** e **https://preview.cr.listab.pt** (repositórios `listab-cc-preview` e `listab-cr-preview`).
-Essas cópias levam `noindex` e uma etiqueta «Pré-visualização» no canto. `./deploy.sh` sem argumentos (produção) só corre no ramo `main`.
-Fluxo sugerido: `git switch -c preview`, experimentar, `./deploy.sh preview`; quando estiver aprovado, juntar ao `main` e correr `./deploy.sh`.
-
-DNS: `preview.cc` e `preview.cr` como registos CNAME para `rolandomar.github.io` (DNS only).
-
 ## Editar conteúdos
 Cada site é gerado a partir do respetivo `data.js`; não é preciso mexer no HTML.
 - Textos, prioridades, manifesto, candidatos, datas e contactos: `*/data.js`
